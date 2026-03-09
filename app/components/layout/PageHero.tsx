@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 interface PageHeroProps {
     title: string;
@@ -7,10 +8,17 @@ interface PageHeroProps {
 
 const PageHero = ({ title, subtitle, bg }: PageHeroProps) => {
     return (
-        <div
-            className="page-hero"
-            style={bg ? { backgroundImage: `url(${bg})` } : undefined}
-        >
+        <div className="page-hero">
+            {bg && (
+                <Image
+                    src={bg}
+                    alt={title}
+                    fill
+                    priority
+                    sizes="100vw"
+                    style={{ objectFit: 'cover' }}
+                />
+            )}
             <div className="page-hero__overlay" />
             <div className="page-hero__content container">
                 <h1 className="page-hero__title">{title}</h1>

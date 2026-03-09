@@ -3,6 +3,7 @@ import { TbPlant2, TbSettings2, TbShieldCheck } from 'react-icons/tb';
 import { MdVerified } from 'react-icons/md';
 import { FaFlask, FaIndustry } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const pillars = [
     {
@@ -110,10 +111,13 @@ export default function AboutPage() {
                     {/* Story image */}
                     <div className="about-story__img-wrap">
                         <div className="about-story__img-badge">Since 2015</div>
-                        <img
+                        <Image
                             src="/tm.webp"
                             alt="Deep Pariwar wheat fields"
                             className="about-story__img"
+                            width={600}
+                            height={560}
+                            style={{ objectFit: 'cover', objectPosition: '73% center' }}
                         />
                         <div className="about-story__img-card">
                             <strong>1000+</strong>
@@ -206,10 +210,12 @@ export default function AboutPage() {
                                 Our leadership blends traditional wisdom with modern practices to bring you the very best.
                             </p>
                             <div className="about-leadership__author">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
                                     alt="Founder"
                                     className="about-leadership__avatar"
+                                    width={64}
+                                    height={64}
                                 />
                                 <div>
                                     <strong>Founder</strong>

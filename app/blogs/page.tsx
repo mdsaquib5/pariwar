@@ -3,6 +3,7 @@
 import PageHero from '../components/layout/PageHero';
 import { TbCalendarEvent, TbUser, TbArrowRight } from 'react-icons/tb';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const blogPosts = [
     {
@@ -62,7 +63,14 @@ export default function BlogsPage() {
                         {blogPosts.map((post) => (
                             <article key={post.id} className="blog-card">
                                 <Link href={`/blogs/${post.id}`} className="blog-card__img-wrap">
-                                    <img src={post.img} alt={post.title} className="blog-card__img" />
+                                    <Image
+                                        src={post.img}
+                                        alt={post.title}
+                                        className="blog-card__img"
+                                        width={600}
+                                        height={400}
+                                        style={{ objectFit: 'cover' }}
+                                    />
                                 </Link>
                                 <div className="blog-card__content">
                                     <div className="blog-card__meta">

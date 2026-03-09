@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import PageHero from '../components/layout/PageHero';
+import Image from 'next/image';
 import { TbShoppingCart, TbX } from 'react-icons/tb';
 
 const products = [
@@ -96,10 +97,13 @@ export default function ShopPage() {
                                     className="product-card__img-wrap"
                                     onClick={() => setSelectedProduct(product)}
                                 >
-                                    <img
+                                    <Image
                                         src={product.img}
                                         alt={product.title}
                                         className="product-card__img"
+                                        width={400}
+                                        height={400}
+                                        style={{ objectFit: 'cover' }}
                                     />
                                     <div className="product-card__img-overlay">
                                         <span>Quick View</span>
@@ -126,10 +130,13 @@ export default function ShopPage() {
 
                         <div className="product-popup__grid">
                             <div className="product-popup__img-wrap">
-                                <img
+                                <Image
                                     src={selectedProduct.img}
                                     alt={selectedProduct.title}
                                     className="product-popup__img"
+                                    width={600}
+                                    height={600}
+                                    style={{ objectFit: 'contain' }}
                                 />
                             </div>
 

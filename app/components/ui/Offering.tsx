@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import SectionTitle from '../layout/SectionTitle';
 import { IoArrowForward } from 'react-icons/io5';
 
@@ -88,10 +89,15 @@ const Offering = () => {
                                 key={i}
                                 style={{ '--card-offset': `${product.offset}px` } as React.CSSProperties}
                             >
-                                <div
-                                    className="offering-card__img"
-                                    style={{ backgroundImage: `url(${product.img})` }}
-                                />
+                                <div className="offering-card__img">
+                                    <Image
+                                        src={product.img}
+                                        alt={product.name}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 20vw"
+                                        style={{ objectFit: 'cover' }}
+                                    />
+                                </div>
                                 <div className="offering-card__body">
                                     <h3 className="offering-card__name">{product.name}</h3>
                                     <p className="offering-card__tagline">{product.tagline}</p>

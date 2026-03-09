@@ -44,7 +44,7 @@ export default function ContactPage() {
         <>
             <PageHero
                 title="Contact Us"
-                subtitle="We'd love to hear from you"
+                subtitle="We&apos;d love to hear from you"
                 bg="/contact-bg.webp"
             />
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
                             {sent ? (
                                 <div className="contact-success">
                                     <span className="contact-success__icon">✓</span>
-                                    <p>Thank you! We'll get back to you within 24–48 working hours.</p>
+                                    <p>Thank you! We&apos;ll get back to you within 24&ndash;48 working hours.</p>
                                 </div>
                             ) : (
                                 <form className="contact-form" onSubmit={handleSubmit}>

@@ -7,8 +7,9 @@ import BackToTop from "./components/layout/backtoTop";
 import { montserrat } from "./fonts/font";
 
 export const metadata: Metadata = {
-  title: "Deep Parivar",
-  description: "Deep Parivar - Your trusted partner for financial solutions",
+  title: "Deep Pariwar | Pure, Fresh & Wholesome Food Staples",
+  description: "Deep Pariwar is your trusted partner for premium quality wheat atta, besan, sooji, and other pure food staples. Tradition meets purity.",
+  keywords: "wheat atta, besan, sooji, poha, dalia, organic food, deep pariwar, healthy breakfast",
 };
 
 export default function RootLayout({

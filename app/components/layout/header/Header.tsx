@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { IoBagOutline, IoPersonOutline, IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 
@@ -46,7 +47,7 @@ const Header = () => {
                 <div className="container header-inner">
 
                     <Link href="/" className="header-logo" onClick={closeDrawer}>
-                        <img src="/logo.webp" alt="Deep Pariwar" className="header-logo__img" />
+                        <Image src="/logo.webp" alt="Deep Pariwar" className="header-logo__img" width={40} height={40} priority />
                         <span className="header-logo__text">Pariwar</span>
                     </Link>
 
@@ -101,7 +102,7 @@ const Header = () => {
             <aside className={`drawer${drawerOpen ? ' drawer--open' : ''}`} aria-label="Mobile Navigation">
                 <div className="drawer-header">
                     <Link href="/" className="drawer-logo" onClick={closeDrawer}>
-                        <img src="/logo.webp" alt="Deep Pariwar" className="drawer-logo__img" />
+                        <Image src="/logo.webp" alt="Deep Pariwar" className="drawer-logo__img" width={32} height={32} />
                         <span>Deep Pariwar</span>
                     </Link>
                     <button className="drawer-close" onClick={closeDrawer} aria-label="Close Menu">

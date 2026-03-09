@@ -9,6 +9,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import Link from 'next/link';
+import Image from 'next/image';
 import { IoArrowForward, IoChevronBack, IoChevronForward, IoLeafOutline } from 'react-icons/io5';
 import { LuShoppingBag } from 'react-icons/lu';
 import { TbWheat } from 'react-icons/tb';
@@ -105,7 +106,16 @@ const Hero = () => {
             >
                 {slides.map((slide, i) => (
                     <SwiperSlide key={i}>
-                        <div className="hero-slide-bg" style={{ backgroundImage: `url(${slide.bg})` }} />
+                        <div className="hero-slide-bg">
+                            <Image
+                                src={slide.bg}
+                                alt={slide.product}
+                                fill
+                                priority={i === 0}
+                                sizes="100vw"
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                         <div className="hero-overlay" />
                         <div className="hero-overlay-gradient" />
                     </SwiperSlide>
@@ -141,7 +151,15 @@ const Hero = () => {
                             <TbWheat size={14} />
                             {active.badge}
                         </div>
-                        <div className="hero-card__image" style={{ backgroundImage: `url(${active.bg})` }} />
+                        <div className="hero-card__image">
+                            <Image
+                                src={active.bg}
+                                alt={active.product}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 400px"
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                         <div className="hero-card__body">
                             <span className="hero-card__label">Featured Product</span>
                             <h3 className="hero-card__name">{active.product}</h3>
@@ -181,7 +199,15 @@ const Hero = () => {
                 >
                     {slides.map((slide, i) => (
                         <SwiperSlide key={i} className="hero-thumb">
-                            <div className="hero-thumb__bg" style={{ backgroundImage: `url(${slide.bg})` }} />
+                            <div className="hero-thumb__bg">
+                                <Image
+                                    src={slide.bg}
+                                    alt={slide.product}
+                                    fill
+                                    sizes="120px"
+                                    style={{ objectFit: 'cover' }}
+                                />
+                            </div>
                             <div className="hero-thumb__overlay" />
                             <span className="hero-thumb__label">{slide.product}</span>
                         </SwiperSlide>

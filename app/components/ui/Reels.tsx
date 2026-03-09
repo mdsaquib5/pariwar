@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCards, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
+import Image from 'next/image';
 import { IoPlay, IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5';
 import { FaInstagram } from 'react-icons/fa';
 
@@ -96,7 +97,14 @@ const Reels = () => {
                             <SwiperSlide key={reel.id} className="reels-slide">
                                 <div className="reels-card">
                                     <div className="reels-card__img-wrap">
-                                        <img src={reel.thumbnail} alt={reel.caption} className="reels-card__img" />
+                                        <Image
+                                            src={reel.thumbnail}
+                                            alt={reel.caption}
+                                            fill
+                                            sizes="400px"
+                                            className="reels-card__img"
+                                            style={{ objectFit: 'cover' }}
+                                        />
                                         <div className="reels-card__overlay">
                                             <button
                                                 className="reels-play-btn"

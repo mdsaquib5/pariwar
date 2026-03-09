@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
 
                     {/* Centered Logo */}
                     <Link href="/" className="footer-logo">
-                        <img src="/logo.webp" alt="Deep Pariwar" className="footer-logo__img" />
+                        <Image src="/logo.webp" alt="Deep Pariwar" className="footer-logo__img" width={40} height={40} />
                         <span className="footer-logo__text">Pariwar</span>
                     </Link>
 

@@ -1,12 +1,25 @@
 'use client';
 
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import PageHero from '../../components/layout/PageHero';
 import { TbCalendarEvent, TbUser, TbArrowLeft, TbShare, TbClock } from 'react-icons/tb';
 import Link from 'next/link';
+import Image from 'next/image';
+
+interface BlogEntry {
+    id: number;
+    title: string;
+    date: string;
+    author: string;
+    readTime: string;
+    category: string;
+    img: string;
+    relatedProduct: string;
+    content: React.ReactNode;
+}
 
 // Detailed blog data (In a real app, this would come from an API or shared data file)
-const blogData: Record<number, any> = {
+const blogData: Record<number, BlogEntry> = {
     1: {
         id: 1,
         title: "The Ultimate Guide to Choosing the Best Atta for Soft Rotis",
@@ -25,8 +38,8 @@ const blogData: Record<number, any> = {
                 </p>
 
                 <blockquote>
-                    "The secret to a soft roti isn't just in the kneading; it begins with the soul of the grain."
-                    <cite>— Traditional Indian Proverb</cite>
+                    &ldquo;The secret to a soft roti isn&apos;t just in the kneading; it begins with the soul of the grain.&rdquo;
+                    <cite>&mdash; Traditional Indian Proverb</cite>
                 </blockquote>
 
                 <h3>1. Understand the Milling Process</h3>
@@ -83,7 +96,7 @@ const blogData: Record<number, any> = {
                 </p>
 
                 <blockquote>
-                    "Replacing refined flour with besan is one of the simplest ways to boost your daily protein intake."
+                    &ldquo;Replacing refined flour with besan is one of the simplest ways to boost your daily protein intake.&rdquo;
                 </blockquote>
 
                 <ul>
@@ -140,12 +153,12 @@ const blogData: Record<number, any> = {
         content: (
             <div className="blog-full-content">
                 <p>
-                    Sooji (Semolina) is arguably the most versatile ingredient in an Indian pantry. Whether it's the savory
+                    Sooji (Semolina) is arguably the most versatile ingredient in an Indian pantry. Whether it&apos;s the savory
                     warmth of an <strong>Upma</strong> or the decadent sweetness of <strong>Halwa</strong>, it never fails.
                 </p>
 
                 <blockquote>
-                    "A pantry without sooji is a pantry without possibilities."
+                    &ldquo;A pantry without sooji is a pantry without possibilities.&rdquo;
                 </blockquote>
 
                 <h3>Cooking Tips for Perfect Texture</h3>
@@ -164,7 +177,6 @@ const blogData: Record<number, any> = {
 
 export default function BlogDetailsPage() {
     const { id } = useParams();
-    const router = useRouter();
     const post = blogData[Number(id)];
 
     if (!post) {
@@ -199,7 +211,14 @@ export default function BlogDetailsPage() {
                     </div>
 
                     <div className="blog-details__main-img">
-                        <img src={post.img} alt={post.title} />
+                        <Image
+                            src={post.img}
+                            alt={post.title}
+                            width={1200}
+                            height={600}
+                            priority
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
 
                     <div className="blog-details__content">

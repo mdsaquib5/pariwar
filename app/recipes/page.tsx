@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import PageHero from '../components/layout/PageHero';
+import Image from 'next/image';
 import { TbClockHour4, TbChefHat, TbZoomIn, TbX } from 'react-icons/tb';
 
 const recipes = [
@@ -91,10 +92,13 @@ export default function RecipesPage() {
                                         className="recipe-card__img-wrap"
                                         onClick={() => setSelectedImage(recipe.img)}
                                     >
-                                        <img
+                                        <Image
                                             src={recipe.img}
                                             alt={recipe.title}
                                             className="recipe-card__img"
+                                            width={300}
+                                            height={300}
+                                            style={{ objectFit: 'cover' }}
                                         />
                                         <div className="recipe-card__img-overlay">
                                             <TbZoomIn size={28} />
@@ -158,10 +162,13 @@ export default function RecipesPage() {
                         <TbX size={32} />
                     </button>
                     <div className="recipe-lightbox__content" onClick={(e) => e.stopPropagation()}>
-                        <img
+                        <Image
                             src={selectedImage}
                             alt="Recipe view"
                             className="recipe-lightbox__img"
+                            width={1000}
+                            height={800}
+                            style={{ objectFit: 'contain' }}
                         />
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
 interface BrandProduct {
@@ -93,10 +94,14 @@ const Brands = () => {
                 >
                     {products.map((p, i) => (
                         <SwiperSlide key={i} className="brands-cf-slide">
-                            <div
-                                className="brands-cf-card"
-                                style={{ backgroundImage: `url(${p.image})` }}
-                            >
+                            <div className="brands-cf-card">
+                                <Image
+                                    src={p.image}
+                                    alt={p.name}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    style={{ objectFit: 'cover' }}
+                                />
                                 <div className="brands-cf-card__overlay" />
                                 <div className="brands-cf-card__content">
                                     <span className="brands-cf-card__tag">{p.tag}</span>

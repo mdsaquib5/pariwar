@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
-import SectionTitle from '../layout/SectionTitle';
 
 const igPosts = [
     {
@@ -76,10 +76,13 @@ const Instagram = () => {
                         tabIndex={0}
                         aria-label="View Instagram Post"
                     >
-                        <img
+                        <Image
                             src={post.image}
                             alt="Instagram Post"
                             className="instagram-img"
+                            width={400}
+                            height={400}
+                            style={{ objectFit: 'cover' }}
                         />
                         <div className="instagram-overlay">
                             <FaInstagram />
@@ -103,7 +106,14 @@ const Instagram = () => {
                     <div className="ig-modal__content">
                         {/* Left Side: Large Image */}
                         <div className="ig-modal__image">
-                            <img src={selectedPost.image} alt="Instagram Post Enlarged" className="ig-modal__img-tag" />
+                            <Image
+                                src={selectedPost.image}
+                                alt="Instagram Post Enlarged"
+                                className="ig-modal__img-tag"
+                                width={800}
+                                height={800}
+                                style={{ objectFit: 'contain' }}
+                            />
                         </div>
 
                         {/* Right Side: Post Info */}
