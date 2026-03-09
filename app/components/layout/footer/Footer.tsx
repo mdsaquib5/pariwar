@@ -40,29 +40,29 @@ const Footer = () => {
                         <div className="footer-contact-row">
                             <div className="footer-contact-item">
                                 <FaPhoneAlt className="footer-contact-icon" />
-                                <a href="tel:+919876543210">+91 98765 43210</a>
+                                <Link href="tel:+919876543210">+91 98765 43210</Link>
                             </div>
                             <div className="footer-contact-item">
                                 <FaEnvelope className="footer-contact-icon" />
-                                <a href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</a>
+                                <Link href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</Link>
                             </div>
                         </div>
                     </div>
 
                     {/* Social Media Icons */}
                     <div className="footer-socials">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebookF />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        </Link>
+                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram />
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        </Link>
+                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <FaTwitter />
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        </Link>
+                        <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                             <FaYoutube />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

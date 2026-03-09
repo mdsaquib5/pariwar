@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import PageHero from '../components/ui/PageHero';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
@@ -59,9 +60,9 @@ export default function ContactPage() {
                                     <h3 className="contact-card__title">{card.title}</h3>
                                     <p className="contact-card__desc">{card.desc}</p>
                                     {card.cta && (
-                                        <a href="mailto:hello@deeppariwar.com" className="contact-card__cta">
+                                        <Link href="mailto:hello@deeppariwar.com" className="contact-card__cta">
                                             {card.cta}
-                                        </a>
+                                        </Link>
                                     )}
                                 </div>
                             ))}
@@ -156,14 +157,14 @@ export default function ContactPage() {
                                     <FaPhoneAlt className="contact-info__icon" />
                                     <div>
                                         <strong>Phone</strong>
-                                        <a href="tel:+919876543210">+91 98765 43210</a>
+                                        <Link href="tel:+919876543210">+91 98765 43210</Link>
                                     </div>
                                 </div>
                                 <div className="contact-info__item">
                                     <FaEnvelope className="contact-info__icon" />
                                     <div>
                                         <strong>Email</strong>
-                                        <a href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</a>
+                                        <Link href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</Link>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { FaInstagram } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import SectionTitle from '../layout/SectionTitle';
@@ -112,9 +113,9 @@ const Instagram = () => {
                             </div>
                             <div className="ig-modal__footer">
                                 <p className="ig-likes">❤️ {selectedPost.likes} likes</p>
-                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="ig-btn">
+                                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="ig-btn">
                                     View on Instagram
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
