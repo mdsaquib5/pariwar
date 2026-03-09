@@ -118,7 +118,6 @@ const Instagram = () => {
                                 <p><strong>DeepPariwarOfficial</strong> {selectedPost.caption}</p>
                             </div>
                             <div className="ig-modal__footer">
-                                <p className="ig-likes">❤️ {selectedPost.likes} likes</p>
                                 <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="ig-btn">
                                     View on Instagram
                                 </Link>

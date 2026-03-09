@@ -6,40 +6,40 @@ const products = [
     {
         name: 'Whole Wheat Atta',
         tagline: 'Pure stone-ground flour',
-        price: 'From ₹180 / 5kg',
-        href: '/shop/atta',
+        price: '180 / 5kg',
+        href: '/shop',
         img: '/hero-bg-1.webp',
         offset: 52,
     },
     {
         name: 'Chickpea Besan',
         tagline: 'Rich gram flour',
-        price: 'From ₹95 / 1kg',
-        href: '/shop/besan',
+        price: '95 / 1kg',
+        href: '/shop',
         img: '/hero-bg-2.webp',
         offset: 18,
     },
     {
         name: 'Fine Sooji',
         tagline: 'Silky milled semolina',
-        price: 'From ₹60 / 1kg',
-        href: '/shop/sooji',
+        price: '60 / 1kg',
+        href: '/shop',
         img: '/hero-bg-3.webp',
         offset: -24,
     },
     {
         name: 'Thin Poha',
         tagline: 'Light flattened rice',
-        price: 'From ₹55 / 1kg',
-        href: '/shop/poha',
+        price: '55 / 1kg',
+        href: '/shop',
         img: '/hero-bg-4.webp',
         offset: 18,
     },
     {
         name: 'Broken Dalia',
         tagline: 'High-fibre porridge',
-        price: 'From ₹65 / 1kg',
-        href: '/shop/dalia',
+        price: '65 / 1kg',
+        href: '/shop',
         img: '/hero-bg-5.webp',
         offset: 52,
     },
@@ -96,7 +96,7 @@ const Offering = () => {
                                     <h3 className="offering-card__name">{product.name}</h3>
                                     <p className="offering-card__tagline">{product.tagline}</p>
                                     <div className="offering-card__bottom">
-                                        <span className="offering-card__price">{product.price}</span>
+                                        <span className="offering-card__price">From ₹{product.price}</span>
                                         <Link href={product.href} className="offering-card__link">
                                             Shop <IoArrowForward size={13} />
                                         </Link>

@@ -1,4 +1,4 @@
-import PageHero from '../components/ui/PageHero';
+import PageHero from '../components/layout/PageHero';
 import { TbPlant2, TbSettings2, TbShieldCheck } from 'react-icons/tb';
 import { MdVerified } from 'react-icons/md';
 import { FaFlask, FaIndustry } from 'react-icons/fa';
@@ -111,7 +111,7 @@ export default function AboutPage() {
                     <div className="about-story__img-wrap">
                         <div className="about-story__img-badge">Since 2015</div>
                         <img
-                            src="/about-bg-3.webp"
+                            src="/tm.webp"
                             alt="Deep Pariwar wheat fields"
                             className="about-story__img"
                         />
@@ -192,7 +192,7 @@ export default function AboutPage() {
                             Deep Pariwar products are designed for everyday Indian kitchens — delivering consistent quality,
                             great taste, and peace of mind.
                         </p>
-                        <Link href="/recipes" className="about-trust__btn">
+                        <Link href="/blogs" className="about-trust__btn">
                             Explore Blogs →
                         </Link>
                     </div>

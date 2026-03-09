@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import PageHero from '../components/ui/PageHero';
+import PageHero from '../components/layout/PageHero';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
 import { MdAccessTime, MdOutlineInventory2 } from 'react-icons/md';

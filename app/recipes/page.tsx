@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import PageHero from '../components/ui/PageHero';
+import PageHero from '../components/layout/PageHero';
 import { TbClockHour4, TbChefHat, TbZoomIn, TbX } from 'react-icons/tb';
 
 const recipes = [
@@ -11,7 +11,7 @@ const recipes = [
         duration: "35 mins",
         difficulty: "Expert",
         badge: "Deep Pariwar Classic",
-        img: "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Maida", "Sugar", "Ghee"],
         method: ["Make dough", "Cut pieces", "Deep fry till golden"]
     },
@@ -21,7 +21,7 @@ const recipes = [
         duration: "45 mins",
         difficulty: "Intermediate",
         badge: "Festive Favourite",
-        img: "https://images.unsplash.com/photo-1599785209707-a456fc1337cb?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Deep Pariwar Besan", "Ghee", "Powdered Sugar", "Cardamom"],
         method: ["Roast besan in ghee till golden", "Let it cool slightly", "Mix sugar and shape into rounds"]
     },
@@ -31,7 +31,7 @@ const recipes = [
         duration: "20 mins",
         difficulty: "Beginner",
         badge: "Comfort Food",
-        img: "https://images.unsplash.com/photo-1589301760014-d929f39ce9b1?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Deep Pariwar Atta", "Ghee", "Sugar", "Water / Milk"],
         method: ["Roast atta in ghee continuously", "Add sugar syrup carefully", "Stir until it stops sticking to pan"]
     },
@@ -41,7 +41,7 @@ const recipes = [
         duration: "15 mins",
         difficulty: "Beginner",
         badge: "Quick Breakfast",
-        img: "https://images.unsplash.com/photo-1606041008023-472dfb5e530f?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Deep Pariwar Poha", "Onions & Peanuts", "Turmeric", "Curry Leaves"],
         method: ["Wash and drain poha", "Sauté spices, peanuts and onions", "Mix poha and garnish with coriander"]
     },
@@ -51,7 +51,7 @@ const recipes = [
         duration: "20 mins",
         difficulty: "Beginner",
         badge: "Healthy Choice",
-        img: "https://images.unsplash.com/photo-1626779848834-58a69eb070a7?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Deep Pariwar Sooji", "Mustard Seeds", "Mixed Veggies", "Water"],
         method: ["Dry roast sooji", "Temper spices and boil vegetables in water", "Slowly add sooji and simmer"]
     },
@@ -61,7 +61,7 @@ const recipes = [
         duration: "15 mins",
         difficulty: "Intermediate",
         badge: "Healthy & Quick",
-        img: "https://images.unsplash.com/photo-1589301760014-d929f39ce9b1?auto=format&fit=crop&w=1200&q=80",
+        img: "/product.webp",
         ingredients: ["Deep Pariwar Atta", "Rice Flour (Optional)", "Curd", "Water"],
         method: ["Whisk atta, curd and water into a smooth batter", "Rest for 10 mins", "Pour on hot pan and crisp with oil"]
     }
@@ -92,7 +92,7 @@ export default function RecipesPage() {
                                         onClick={() => setSelectedImage(recipe.img)}
                                     >
                                         <img
-                                            src={recipe.img.replace('w=1200', 'w=400')}
+                                            src={recipe.img}
                                             alt={recipe.title}
                                             className="recipe-card__img"
                                         />

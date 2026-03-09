@@ -32,7 +32,7 @@ const slides: Slide[] = [
         line1: 'Pure From',
         line2: 'The Fields',
         desc: 'Stone-ground whole wheat flour — crafted for authentic rotis & wholesome family meals every day.',
-        price: 'From ₹180 / 5kg',
+        price: '180 / 5kg',
         badge: '100% Natural',
     },
     {
@@ -42,7 +42,7 @@ const slides: Slide[] = [
         line1: 'Golden',
         line2: 'Besan',
         desc: 'Premium chickpea gram flour — perfect for crispy pakoras, soft kadhi & classic halwa.',
-        price: 'From ₹95 / 1kg',
+        price: '95 / 1kg',
         badge: 'High Protein',
     },
     {
@@ -52,7 +52,7 @@ const slides: Slide[] = [
         line1: 'Silky',
         line2: 'Sooji',
         desc: 'Finely milled semolina — perfect for fluffy upma, rich halwa & creamy sooji ki kheer.',
-        price: 'From ₹60 / 1kg',
+        price: '60 / 1kg',
         badge: 'Pure Wheat',
     },
     {
@@ -62,7 +62,7 @@ const slides: Slide[] = [
         line1: 'Morning',
         line2: 'Freshness',
         desc: 'Light, fluffy flattened rice — the quickest & most delicious Indian breakfast every morning.',
-        price: 'From ₹55 / 1kg',
+        price: '55 / 1kg',
         badge: 'Light & Healthy',
     },
     {
@@ -72,7 +72,7 @@ const slides: Slide[] = [
         line1: 'Nourishing',
         line2: 'Dalia',
         desc: 'Wholesome broken wheat dalia — the perfect high-fibre porridge for a strong, healthy start.',
-        price: 'From ₹65 / 1kg',
+        price: '65 / 1kg',
         badge: 'High Fibre',
     },
 ];
@@ -132,7 +132,7 @@ const Hero = () => {
                             <Link href="/shop" className="hero-btn">
                                 Shop Now <IoArrowForward />
                             </Link>
-                            <span className="hero-price">{active.price}</span>
+                            <span className="hero-price">From ₹{active.price}</span>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@ const Hero = () => {
                             <span className="hero-card__label">Featured Product</span>
                             <h3 className="hero-card__name">{active.product}</h3>
                             <div className="hero-card__footer">
-                                <strong className="hero-card__price">{active.price}</strong>
+                                <strong className="hero-card__price">From ₹{active.price}</strong>
                                 <button className="hero-card__add" aria-label="Add to cart">
                                     <LuShoppingBag size={15} />
                                 </button>

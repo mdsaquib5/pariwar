@@ -10,6 +10,7 @@ const navLinks = [
     { label: 'About', href: '/about' },
     { label: 'Shop', href: '/shop' },
     { label: 'Recipes', href: '/recipes' },
+    { label: 'Blogs', href: '/blogs' },
     { label: 'Contact', href: '/contact' },
 ];
 
@@ -66,12 +67,12 @@ const Header = () => {
                     </nav>
 
                     <div className="header-actions">
-                        <Link href="/cart" className="header-icon" aria-label="Cart">
+                        <Link href="/" className="header-icon" aria-label="Cart">
                             <IoBagOutline size={22} />
                             <span className="header-icon__badge">0</span>
                         </Link>
 
-                        <Link href="/account" className="header-icon" aria-label="Account">
+                        <Link href="/" className="header-icon" aria-label="Account">
                             <IoPersonOutline size={22} />
                         </Link>
 
@@ -129,11 +130,11 @@ const Header = () => {
                 </nav>
 
                 <div className="drawer-footer">
-                    <Link href="/cart" className="drawer-action-btn" onClick={closeDrawer}>
+                    <Link href="/" className="drawer-action-btn" onClick={closeDrawer}>
                         <IoBagOutline size={18} />
                         Cart
                     </Link>
-                    <Link href="/account" className="drawer-action-btn" onClick={closeDrawer}>
+                    <Link href="/" className="drawer-action-btn" onClick={closeDrawer}>
                         <IoPersonOutline size={18} />
                         Account
                     </Link>

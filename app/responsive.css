@@ -153,7 +153,12 @@
     }
 
     .about-story__img-wrap {
-        display: none;
+        order: -1;
+    }
+
+    .about-story__img {
+        height: 480px;
+        object-position: 75% center;
     }
 
     .about-certs {
@@ -289,6 +294,11 @@
 
     .recipe-card__title {
         font-size: 1.4rem;
+    }
+
+    .about-story__img {
+        height: 400px;
+        object-position: 78% center;
     }
 }
 
@@ -554,5 +564,10 @@
 
     .page-hero__content {
         padding-bottom: 36px;
+    }
+
+    .about-story__img {
+        height: 350px;
+        object-position: 80% center;
     }
 }
