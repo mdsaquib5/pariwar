@@ -76,12 +76,15 @@ const Brands = () => {
                     grabCursor
                     centeredSlides
                     loop
-                    slidesPerView="auto"
+                    slidesPerView={1}
+                    breakpoints={{
+                        768: { slidesPerView: 3 }
+                    }}
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 0,
-                        depth: 200,
-                        modifier: 2.5,
+                        depth: 300,
+                        modifier: 1.5,
                         slideShadows: false,
                     }}
                     autoplay={{ delay: 3500, disableOnInteraction: false }}

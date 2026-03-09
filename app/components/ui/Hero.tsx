@@ -204,7 +204,7 @@ const Hero = () => {
                                     src={slide.bg}
                                     alt={slide.product}
                                     fill
-                                    sizes="120px"
+                                    sizes="25vw"
                                     style={{ objectFit: 'cover' }}
                                 />
                             </div>

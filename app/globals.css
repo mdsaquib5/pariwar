@@ -589,8 +589,10 @@ section {
 }
 
 .hero-slide-bg {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
     transform: scale(1.06) translateZ(0);
@@ -810,10 +812,10 @@ section {
 }
 
 .hero-card__image {
+    position: relative;
     height: 160px;
-    background-size: cover;
-    background-position: center;
     transition: transform 0.5s ease;
+    overflow: hidden;
 }
 
 .hero-card:hover .hero-card__image {
@@ -960,8 +962,10 @@ section {
 }
 
 .hero-thumb__bg {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -1405,11 +1409,11 @@ section {
 }
 
 .offering-card__img {
+    position: relative;
     width: 100%;
     height: 190px;
-    background-size: cover;
-    background-position: center;
     transition: transform 0.5s ease;
+    overflow: hidden;
 }
 
 .offering-card:hover .offering-card__img {
@@ -2381,7 +2385,7 @@ section {
 
 /* Each slide */
 .brands-cf-slide {
-    width: 480px !important;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     cursor: grab;
@@ -4604,6 +4608,21 @@ section {
     .reels-title {
         font-size: 2rem;
     }
+}
+
+/* Pagination */
+.reels-swiper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4) !important;
+    opacity: 1 !important;
+    width: 8px;
+    height: 8px;
+    transition: all 0.3s ease;
+}
+
+.reels-swiper .swiper-pagination-bullet-active {
+    background: var(--primary-color) !important;
+    width: 20px !important;
+    border-radius: 4px !important;
 }
 
 /* Video Modal */
