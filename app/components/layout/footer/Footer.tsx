@@ -40,11 +40,11 @@ const Footer = () => {
                         <div className="footer-contact-row">
                             <div className="footer-contact-item">
                                 <FaPhoneAlt className="footer-contact-icon" />
-                                <span>+91 98765 43210</span>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
                             </div>
                             <div className="footer-contact-item">
                                 <FaEnvelope className="footer-contact-icon" />
-                                <span>hello@deeppariwar.com</span>
+                                <a href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</a>
                             </div>
                         </div>
                     </div>

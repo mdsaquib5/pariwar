@@ -457,14 +457,90 @@
 
     .recipe-card__header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 20px;
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
 
+    .recipe-card__img-wrap {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .recipe-card__info {
+        align-items: center;
+    }
+
     .recipe-card__title {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
+    }
+
+    .recipe-card__meta {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Change horizontal timeline to vertical list on mobile */
+    .recipe-timeline-flow {
+        flex-direction: column;
+        gap: 15px;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .recipe-timeline-item {
+        flex-direction: row;
+        align-items: center;
+        min-width: 100%;
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    /* Hide horizontal connecting lines */
+    .recipe-timeline-flow:not(.recipe-timeline-flow--method) .recipe-timeline-item::after,
+    .recipe-timeline-flow--method .recipe-timeline-item::after {
+        display: none;
+    }
+
+    /* Add vertical connecting lines instead */
+    .recipe-timeline-item {
+        position: relative;
+    }
+
+    .recipe-timeline-item::before {
+        content: '';
+        position: absolute;
+        top: 32px;
+        left: 15px;
+        /* Centered with the icon/dot */
+        width: 2px;
+        height: calc(100% - 15px);
+        background: rgba(228, 180, 76, 0.3);
+        z-index: -1;
+    }
+
+    .recipe-timeline-flow:not(.recipe-timeline-flow--method) .recipe-timeline-item::before {
+        top: 25px;
+        left: 19px;
+        /* Centered with the dot */
+    }
+
+    .recipe-timeline-dot {
+        margin-left: 12px;
+        /* Align with desktop dot style */
+    }
+
+    .recipe-timeline-number {
+        margin-left: 0;
+    }
+
+    .recipe-timeline-glass {
+        width: 100%;
+        padding: 12px 16px;
     }
 
     .shop-grid {
