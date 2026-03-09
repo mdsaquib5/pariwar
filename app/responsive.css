@@ -1,0 +1,446 @@
+/* <= 1820px */
+@media (max-width: 1820px) {}
+
+/* <= 1600px */
+@media (max-width: 1600px) {}
+
+/* <= 1440px */
+@media (max-width: 1440px) {
+    .hero-card {
+        width: 220px;
+    }
+}
+
+/* <= 1200px */
+@media (max-width: 1200px) {
+    .header-nav__link {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+
+    .hero-card {
+        width: 200px;
+    }
+
+    .hero-counter {
+        right: 16px;
+    }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-hamburger {
+        display: flex;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    .hero-diagonal::after {
+        display: none;
+    }
+
+    .hero-nav-prev {
+        left: 14px;
+    }
+
+    .hero-nav-next {
+        right: 14px;
+    }
+
+    .offering-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offering-arch {
+        display: none;
+    }
+
+    .offering-card {
+        transform: translateY(0) !important;
+    }
+
+    .offering-card:hover {
+        transform: translateY(-12px) !important;
+    }
+}
+
+/* <= 992px */
+@media (max-width: 992px) {
+    .hero-anim-wrap {
+        padding-bottom: 80px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-wrap {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ig-modal__content {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .ig-modal__image {
+        min-height: 350px;
+        flex: none;
+    }
+
+    /* Brands */
+    .brands-section {
+        padding-block: 70px 50px;
+    }
+
+    .brands-cf-slide {
+        width: 360px !important;
+    }
+
+    .brands-cf-card {
+        height: 300px;
+    }
+
+    .brands-nav {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brands-nav-prev {
+        left: 12px;
+    }
+
+    .brands-nav-next {
+        right: 12px;
+    }
+
+    /* Contact */
+    .contact-cards-bg {
+        padding: 32px 24px;
+    }
+
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About */
+    .about-story__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about-story__img-wrap {
+        display: none;
+    }
+
+    .about-certs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-bottom__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-timeline__item--left {
+        padding-right: calc(50% + 24px);
+    }
+
+    .about-timeline__item--right {
+        padding-left: calc(50% + 24px);
+    }
+
+    /* Recipes */
+    .recipe-grid-2col {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+    .site-header {
+        padding-block: 18px;
+    }
+
+    .site-header--scrolled {
+        padding-block: 12px;
+    }
+
+    .header-logo {
+        font-size: 1.25rem;
+    }
+
+    .drawer {
+        width: 280px;
+    }
+
+    .hero-thumbs-wrap {
+        height: 70px;
+    }
+
+    .hero-thumbs-swiper {
+        height: 70px;
+    }
+
+    .hero-thumb {
+        height: 70px;
+    }
+
+    .hero-anim-wrap {
+        padding-bottom: 76px;
+    }
+
+    .hero-counter {
+        display: none;
+    }
+
+    .hero-nav {
+        width: 38px;
+        height: 38px;
+    }
+
+    .offering-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offering-cta {
+        margin-top: 48px;
+    }
+
+    /* Brands */
+    .brands-cf-slide {
+        width: 280px !important;
+    }
+
+    .brands-cf-card {
+        height: 250px;
+    }
+
+    .brands-cf-card__name {
+        font-size: 1.2rem;
+    }
+
+    .brands-nav {
+        display: none;
+    }
+
+    /* About */
+    .about-timeline__line {
+        display: none;
+    }
+
+    .about-timeline__item--left,
+    .about-timeline__item--right {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-timeline__dot {
+        display: none;
+    }
+
+    .about-timeline {
+        gap: 16px;
+    }
+
+    .about-certs {
+        grid-template-columns: 1fr;
+    }
+
+    .about-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    /* Recipes */
+    .recipe-card {
+        padding: 24px;
+    }
+}
+
+/* <= 576px */
+@media (max-width: 576px) {
+    .header-logo {
+        font-size: 1.1rem;
+    }
+
+    .drawer {
+        width: 100%;
+    }
+
+    .hero-thumbs-wrap {
+        display: none;
+    }
+
+    .hero-anim-wrap {
+        padding-bottom: 40px;
+    }
+
+    .hero-left {
+        padding-left: 20px;
+    }
+
+    .hero-border {
+        width: 3px;
+    }
+
+    .hero-btn {
+        padding: 12px 22px;
+        font-size: 0.75rem;
+    }
+
+    .offering-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why {
+        padding-block: 60px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-header {
+        margin-bottom: 40px;
+    }
+
+    .vision {
+        padding-block: 60px;
+    }
+
+    .vision-video-card {
+        height: 240px;
+        border-radius: 16px;
+    }
+
+    .vision-card {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .vision-card--transparent {
+        padding-inline: 0;
+    }
+
+    .cta-section {
+        padding-block: 60px;
+    }
+
+    .cta-form-card {
+        padding: 32px 24px;
+    }
+
+    .cta-input-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding-block: 60px 40px;
+    }
+
+    .footer-content {
+        padding: 40px 20px;
+    }
+
+    .footer-nav {
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .footer-nav a {
+        font-size: 0.85rem;
+    }
+
+    .footer-contact {
+        width: 100%;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-contact-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-contact-item {
+        font-size: 0.85rem;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-socials a {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .instagram-section {
+        padding-top: 60px;
+    }
+
+    .ig-header {
+        margin-bottom: 30px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-cards-bg {
+        padding: 24px 16px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form__row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Recipes */
+    .recipe-card__body {
+        grid-template-columns: 1fr;
+    }
+
+    /* Page Hero */
+    .page-hero {
+        height: 280px;
+    }
+
+    .page-hero__content {
+        padding-bottom: 36px;
+    }
+}

@@ -1,0 +1,196 @@
+'use client';
+
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Navigation, Thumbs } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import Link from 'next/link';
+import { IoArrowForward, IoChevronBack, IoChevronForward, IoLeafOutline } from 'react-icons/io5';
+import { LuShoppingBag } from 'react-icons/lu';
+import { TbWheat } from 'react-icons/tb';
+
+interface Slide {
+    bg: string;
+    tag: string;
+    product: string;
+    line1: string;
+    line2: string;
+    desc: string;
+    price: string;
+    badge: string;
+}
+
+const slides: Slide[] = [
+    {
+        bg: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1920&q=80',
+        tag: 'Premium Quality',
+        product: 'Whole Wheat Atta',
+        line1: 'Pure From',
+        line2: 'The Fields',
+        desc: 'Stone-ground whole wheat flour — crafted for authentic rotis & wholesome family meals every day.',
+        price: 'From ₹180 / 5kg',
+        badge: '100% Natural',
+    },
+    {
+        bg: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?auto=format&fit=crop&w=1920&q=80',
+        tag: 'Rich in Protein',
+        product: 'Chickpea Besan',
+        line1: 'Golden',
+        line2: 'Besan',
+        desc: 'Premium chickpea gram flour — perfect for crispy pakoras, soft kadhi & classic halwa.',
+        price: 'From ₹95 / 1kg',
+        badge: 'High Protein',
+    },
+    {
+        bg: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=1920&q=80',
+        tag: 'Finely Milled',
+        product: 'Fine Sooji',
+        line1: 'Silky',
+        line2: 'Sooji',
+        desc: 'Finely milled semolina — perfect for fluffy upma, rich halwa & creamy sooji ki kheer.',
+        price: 'From ₹60 / 1kg',
+        badge: 'Pure Wheat',
+    },
+    {
+        bg: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1920&q=80',
+        tag: 'Light & Fluffy',
+        product: 'Thin Poha',
+        line1: 'Morning',
+        line2: 'Freshness',
+        desc: 'Light, fluffy flattened rice — the quickest & most delicious Indian breakfast every morning.',
+        price: 'From ₹55 / 1kg',
+        badge: 'Light & Healthy',
+    },
+    {
+        bg: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1920&q=80',
+        tag: 'High Fibre',
+        product: 'Broken Dalia',
+        line1: 'Nourishing',
+        line2: 'Dalia',
+        desc: 'Wholesome broken wheat dalia — the perfect high-fibre porridge for a strong, healthy start.',
+        price: 'From ₹65 / 1kg',
+        badge: 'High Fibre',
+    },
+];
+
+const Hero = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animKey, setAnimKey] = useState(0);
+
+    const handleSlideChange = (swiper: SwiperType) => {
+        setActiveIndex(swiper.realIndex);
+        setAnimKey(prev => prev + 1);
+    };
+
+    const active = slides[activeIndex];
+
+    return (
+        <section className="hero">
+
+            <Swiper
+                className="hero-swiper"
+                modules={[Autoplay, EffectFade, Navigation, Thumbs]}
+                effect="fade"
+                speed={1400}
+                autoplay={{ delay: 5500, disableOnInteraction: false }}
+                navigation={{ nextEl: '.hero-nav-next', prevEl: '.hero-nav-prev' }}
+                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                onSlideChange={handleSlideChange}
+                loop
+            >
+                {slides.map((slide, i) => (
+                    <SwiperSlide key={i}>
+                        <div className="hero-slide-bg" style={{ backgroundImage: `url(${slide.bg})` }} />
+                        <div className="hero-overlay" />
+                        <div className="hero-overlay-gradient" />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+
+            <div className="hero-diagonal" aria-hidden="true" />
+
+            <div className="hero-content container">
+                <div className="hero-anim-wrap" key={animKey}>
+
+                    <div className="hero-left">
+                        <div className="hero-border" aria-hidden="true" />
+                        <span className="hero-tag">
+                            <IoLeafOutline />
+                            {active.tag}
+                        </span>
+                        <h1 className="hero-heading">
+                            <span className="hero-heading__line1">{active.line1}</span>
+                            <span className="hero-heading__line2">{active.line2}</span>
+                        </h1>
+                        <p className="hero-desc">{active.desc}</p>
+                        <div className="hero-actions">
+                            <Link href="/shop" className="hero-btn">
+                                Shop Now <IoArrowForward />
+                            </Link>
+                            <span className="hero-price">{active.price}</span>
+                        </div>
+                    </div>
+
+                    <div className="hero-card">
+                        <div className="hero-card__badge">
+                            <TbWheat size={14} />
+                            {active.badge}
+                        </div>
+                        <div className="hero-card__image" style={{ backgroundImage: `url(${active.bg})` }} />
+                        <div className="hero-card__body">
+                            <span className="hero-card__label">Featured Product</span>
+                            <h3 className="hero-card__name">{active.product}</h3>
+                            <div className="hero-card__footer">
+                                <strong className="hero-card__price">{active.price}</strong>
+                                <button className="hero-card__add" aria-label="Add to cart">
+                                    <LuShoppingBag size={15} />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="hero-counter" aria-label="Slide counter">
+                <span className="hero-counter__num">{String(activeIndex + 1).padStart(2, '0')}</span>
+                <span className="hero-counter__line" />
+                <span className="hero-counter__num">{String(slides.length).padStart(2, '0')}</span>
+            </div>
+
+            <button className="hero-nav hero-nav-prev" aria-label="Previous slide">
+                <IoChevronBack size={18} />
+            </button>
+            <button className="hero-nav hero-nav-next" aria-label="Next slide">
+                <IoChevronForward size={18} />
+            </button>
+
+            <div className="hero-thumbs-wrap">
+                <Swiper
+                    className="hero-thumbs-swiper"
+                    modules={[Thumbs]}
+                    onSwiper={setThumbsSwiper}
+                    slidesPerView={5}
+                    spaceBetween={0}
+                    watchSlidesProgress
+                >
+                    {slides.map((slide, i) => (
+                        <SwiperSlide key={i} className="hero-thumb">
+                            <div className="hero-thumb__bg" style={{ backgroundImage: `url(${slide.bg})` }} />
+                            <div className="hero-thumb__overlay" />
+                            <span className="hero-thumb__label">{slide.product}</span>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
+        </section>
+    );
+};
+
+export default Hero;

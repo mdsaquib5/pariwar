@@ -1,0 +1,127 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { FaInstagram } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
+import SectionTitle from '../layout/SectionTitle';
+
+const igPosts = [
+    {
+        id: 1,
+        image: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=600&q=80',
+        caption: 'Starting the day right with the purity of Deep Pariwar premium wheat! 🌾 Experience the difference in every bite.',
+        likes: 124,
+    },
+    {
+        id: 2,
+        image: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=600&q=80',
+        caption: 'Soft, fluffy, and perfectly golden parathas made from our finely milled Chakki fresh atta.',
+        likes: 89,
+    },
+    {
+        id: 3,
+        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        caption: 'A feast for the soul and the family! 🥘✨ Make your festive meals truly special with Deep Pariwar.',
+        likes: 215,
+    },
+    {
+        id: 4,
+        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        caption: 'From our farms to your plate. We ensure 100% natural processing with zero preservatives.',
+        likes: 156,
+    },
+    {
+        id: 5,
+        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        caption: 'Crunchy, fresh, and deeply satisfying. Cooking made better with purely traditional methods. 💛',
+        likes: 108,
+    }
+];
+
+const Instagram = () => {
+    const [selectedPost, setSelectedPost] = useState<typeof igPosts[0] | null>(null);
+
+    // Prevent body scroll when modal is open
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            if (selectedPost) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        return () => {
+            if (typeof window !== 'undefined') {
+                document.body.style.overflow = '';
+            }
+        };
+    }, [selectedPost]);
+
+    return (
+        <section className="instagram-section">
+            <div className="instagram-grid">
+                {igPosts.map((post) => (
+                    <div
+                        key={post.id}
+                        className="instagram-item"
+                        onClick={() => setSelectedPost(post)}
+                        role="button"
+                        tabIndex={0}
+                        aria-label="View Instagram Post"
+                    >
+                        <img
+                            src={post.image}
+                            alt="Instagram Post"
+                            className="instagram-img"
+                        />
+                        <div className="instagram-overlay">
+                            <FaInstagram />
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Lightbox Modal */}
+            <div className={`ig-modal ${selectedPost ? 'ig-modal--open' : ''}`}>
+                <div className="ig-modal__backdrop" onClick={() => setSelectedPost(null)} />
+                <button
+                    className="ig-modal__close"
+                    onClick={() => setSelectedPost(null)}
+                    aria-label="Close Gallery"
+                >
+                    <IoClose size={32} />
+                </button>
+
+                {selectedPost && (
+                    <div className="ig-modal__content">
+                        {/* Left Side: Large Image */}
+                        <div className="ig-modal__image">
+                            <img src={selectedPost.image} alt="Instagram Post Enlarged" className="ig-modal__img-tag" />
+                        </div>
+
+                        {/* Right Side: Post Info */}
+                        <div className="ig-modal__info">
+                            <div className="ig-modal__header">
+                                <div className="ig-avatar">DP</div>
+                                <div>
+                                    <h4>DeepPariwarOfficial</h4>
+                                </div>
+                            </div>
+                            <div className="ig-modal__body">
+                                <p><strong>DeepPariwarOfficial</strong> {selectedPost.caption}</p>
+                            </div>
+                            <div className="ig-modal__footer">
+                                <p className="ig-likes">❤️ {selectedPost.likes} likes</p>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="ig-btn">
+                                    View on Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+};
+
+export default Instagram;
