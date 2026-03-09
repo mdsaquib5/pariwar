@@ -18,33 +18,33 @@ interface Reel {
 const reelsData: Reel[] = [
     {
         id: 1,
-        thumbnail: '/hero-bg-1.webp',
-        videoUrl: 'https://www.youtube.com/embed/mg_15nm5Z4g',
-        caption: 'Pure stone-ground atta from the heart of India. 🌾 #purity #tradition',
+        thumbnail: 'https://img.youtube.com/vi/gjwOjyOwL7o/maxresdefault.jpg',
+        videoUrl: 'https://www.youtube.com/embed/gjwOjyOwL7o',
+        caption: 'Deep Pariwar - Soft & Fluffy Rotis 🌾 #food #atta #indianfood',
     },
     {
         id: 2,
-        thumbnail: '/hero-bg-2.webp',
-        videoUrl: 'https://www.youtube.com/embed/mg_15nm5Z4g',
-        caption: 'Festive season calls for pure Besan sweets! 🍯✨ #deeppariwar #besan',
+        thumbnail: 'https://img.youtube.com/vi/lSjHlaWczrM/maxresdefault.jpg',
+        videoUrl: 'https://www.youtube.com/embed/lSjHlaWczrM',
+        caption: 'Pure Chakki Fresh Atta for your family. 🥣 #purity #health',
     },
     {
         id: 3,
-        thumbnail: '/hero-bg-3.webp',
-        videoUrl: 'https://www.youtube.com/embed/mg_15nm5Z4g',
-        caption: 'Making morning breakfast easier with our premium range. ☀️ #healthy #breakfast',
+        thumbnail: 'https://img.youtube.com/vi/PC4KenvWe1E/maxresdefault.jpg',
+        videoUrl: 'https://www.youtube.com/embed/PC4KenvWe1E',
+        caption: 'The secret to the perfect roti. ✨ #deeppariwar #recipe',
     },
     {
         id: 4,
-        thumbnail: '/hero-bg-4.webp',
-        videoUrl: 'https://www.youtube.com/embed/mg_15nm5Z4g',
-        caption: 'Authentic taste in every bite. Experience the freshness. 🥘 #authentic',
+        thumbnail: 'https://img.youtube.com/vi/dmByFHPd9BY/maxresdefault.jpg',
+        videoUrl: 'https://www.youtube.com/embed/dmByFHPd9BY',
+        caption: 'Freshly ground whole wheat flour. 🚜 #farmtoplate #natural',
     },
     {
         id: 5,
-        thumbnail: '/hero-bg-5.webp',
-        videoUrl: 'https://www.youtube.com/embed/mg_15nm5Z4g',
-        caption: 'Sustainability and health go hand in hand. 🌱 #organic #life',
+        thumbnail: 'https://img.youtube.com/vi/zsUa9SdVVng/maxresdefault.jpg',
+        videoUrl: 'https://www.youtube.com/embed/zsUa9SdVVng',
+        caption: 'Nourishing lives with every bite. 🍪 #wholesome #nutrition',
     }
 ];
 

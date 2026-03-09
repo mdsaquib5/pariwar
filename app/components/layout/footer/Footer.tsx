@@ -54,13 +54,13 @@ const Footer = () => {
                         <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebookF />
                         </Link>
-                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <Link href="https://www.instagram.com/deeppariwar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram />
                         </Link>
                         <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <FaTwitter />
                         </Link>
-                        <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <Link href="https://www.youtube.com/@DeepPariwar1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                             <FaYoutube />
                         </Link>
                     </div>

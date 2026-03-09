@@ -22,7 +22,7 @@ const Vision = () => {
                         <div className="vision-video-card" style={{ cursor: 'default' }}>
                             <iframe
                                 className="vision-iframe"
-                                src="https://www.youtube.com/embed/Bey4XXJAqS8?rel=0"
+                                src="https://www.youtube.com/embed/j602dTRwuEM?autoplay=1&mute=1&loop=1&playlist=j602dTRwuEM&rel=0"
                                 title="Deep Pariwar Vision"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
