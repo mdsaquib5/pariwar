@@ -76,7 +76,7 @@ const Brands = () => {
           grabCursor
           centeredSlides
           loop
-          slidesPerView={1}
+          slidesPerView={'auto'}
           breakpoints={{
             768: { slidesPerView: 3 }
           }}
