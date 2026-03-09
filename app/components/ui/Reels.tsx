@@ -73,7 +73,7 @@ const Reels = () => {
                 <div className="reels-header">
                     <div className="reels-header__left">
                         <span className="reels-eyebrow">
-                            <FaInstagram /> Instagram Reels
+                            <FaInstagram /> Youtube Shorts
                         </span>
                         <h2 className="reels-title">Experience the <span className="reels-title__accent">Deep Pariwar</span> Story</h2>
                     </div>
