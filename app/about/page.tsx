@@ -69,7 +69,7 @@ export default function AboutPage() {
             <PageHero
                 title="Our Story"
                 subtitle="Rooted in tradition. Powered by purity."
-                bg="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1920&q=80"
+                bg="/about-bg.webp"
             />
 
             {/* ── Our Story ─────────────────────────────────────── */}
@@ -111,7 +111,7 @@ export default function AboutPage() {
                     <div className="about-story__img-wrap">
                         <div className="about-story__img-badge">Since 2015</div>
                         <img
-                            src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=80"
+                            src="/about-bg-3.webp"
                             alt="Deep Pariwar wheat fields"
                             className="about-story__img"
                         />

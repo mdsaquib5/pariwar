@@ -45,7 +45,7 @@ export default function ContactPage() {
             <PageHero
                 title="Contact Us"
                 subtitle="We'd love to hear from you"
-                bg="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=1920&q=80"
+                bg="/contact-bg.webp"
             />
 
             <section className="contact-section">

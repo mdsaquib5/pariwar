@@ -51,7 +51,7 @@ export default function ShopPage() {
             <PageHero
                 title="Our Shop"
                 subtitle="Pure, honest groceries for your family."
-                bg="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=1920&q=80"
+                bg="/shop-bg.webp"
             />
 
             <section className="shop-section">

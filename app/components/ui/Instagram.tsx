@@ -9,33 +9,39 @@ import SectionTitle from '../layout/SectionTitle';
 const igPosts = [
     {
         id: 1,
-        image: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=600&q=80',
+        image: '/hero-bg-1.webp',
         caption: 'Starting the day right with the purity of Deep Pariwar premium wheat! 🌾 Experience the difference in every bite.',
         likes: 124,
     },
     {
         id: 2,
-        image: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=600&q=80',
+        image: '/hero-bg-2.webp',
         caption: 'Soft, fluffy, and perfectly golden parathas made from our finely milled Chakki fresh atta.',
         likes: 89,
     },
     {
         id: 3,
-        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        image: '/hero-bg-3.webp',
         caption: 'A feast for the soul and the family! 🥘✨ Make your festive meals truly special with Deep Pariwar.',
         likes: 215,
     },
     {
         id: 4,
-        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        image: '/hero-bg-4.webp',
         caption: 'From our farms to your plate. We ensure 100% natural processing with zero preservatives.',
         likes: 156,
     },
     {
         id: 5,
-        image: 'https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=600&q=80',
+        image: '/hero-bg-5.webp',
         caption: 'Crunchy, fresh, and deeply satisfying. Cooking made better with purely traditional methods. 💛',
         likes: 108,
+    },
+    {
+        id: 6,
+        image: '/hero-bg-1.webp',
+        caption: 'A feast for the soul and the family! 🥘✨ Make your festive meals truly special with Deep Pariwar.',
+        likes: 215,
     }
 ];
 

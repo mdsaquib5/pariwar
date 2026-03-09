@@ -45,7 +45,7 @@ const Header = () => {
                 <div className="container header-inner">
 
                     <Link href="/" className="header-logo" onClick={closeDrawer}>
-                        <img src="/logo.png" alt="Deep Pariwar" className="header-logo__img" />
+                        <img src="/logo.webp" alt="Deep Pariwar" className="header-logo__img" />
                         <span className="header-logo__text">Pariwar</span>
                     </Link>
 
@@ -100,7 +100,7 @@ const Header = () => {
             <aside className={`drawer${drawerOpen ? ' drawer--open' : ''}`} aria-label="Mobile Navigation">
                 <div className="drawer-header">
                     <Link href="/" className="drawer-logo" onClick={closeDrawer}>
-                        <img src="/logo.png" alt="Deep Pariwar" className="drawer-logo__img" />
+                        <img src="/logo.webp" alt="Deep Pariwar" className="drawer-logo__img" />
                         <span>Deep Pariwar</span>
                     </Link>
                     <button className="drawer-close" onClick={closeDrawer} aria-label="Close Menu">

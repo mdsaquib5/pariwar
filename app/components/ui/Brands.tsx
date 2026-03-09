@@ -20,38 +20,32 @@ const products: BrandProduct[] = [
         name: 'Chakki Atta',
         desc: 'Stone-ground whole wheat flour — crafted for authentic rotis & wholesome family meals every single day.',
         tag: '100% Natural',
-        image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80',
+        image: '/hero-bg-1.webp',
     },
     {
         name: 'Golden Besan',
         desc: 'Premium chickpea gram flour — perfect for crispy pakoras, soft kadhi & classic halwa.',
         tag: 'High Protein',
-        image: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?auto=format&fit=crop&w=800&q=80',
+        image: '/hero-bg-2.webp',
     },
     {
         name: 'Fine Maida',
         desc: 'Finely milled all-purpose flour — ideal for soft puris, fluffy naan & bakery delights.',
         tag: 'Finely Milled',
-        image: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+        image: '/hero-bg-3.webp',
     },
     {
         name: 'Thin Poha',
         desc: 'Light, fluffy flattened rice — the quickest & most delicious Indian breakfast every morning.',
         tag: 'Light & Healthy',
-        image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80',
+        image: '/hero-bg-4.webp',
     },
     {
         name: 'Broken Dalia',
         desc: 'Wholesome broken wheat dalia — the perfect high-fibre porridge for a strong, healthy start.',
         tag: 'High Fibre',
-        image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-        name: 'Fine Sooji',
-        desc: 'Finely milled semolina — perfect for fluffy upma, rich halwa & creamy sooji ki kheer.',
-        tag: 'Pure Wheat',
-        image: 'https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?auto=format&fit=crop&w=800&q=80',
-    },
+        image: '/hero-bg-5.webp',
+    }
 ];
 
 const Brands = () => {

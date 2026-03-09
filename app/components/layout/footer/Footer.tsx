@@ -9,7 +9,7 @@ const Footer = () => {
 
                     {/* Centered Logo */}
                     <Link href="/" className="footer-logo">
-                        <img src="/logo.png" alt="Deep Pariwar" className="footer-logo__img" />
+                        <img src="/logo.webp" alt="Deep Pariwar" className="footer-logo__img" />
                         <span className="footer-logo__text">Pariwar</span>
                     </Link>
 

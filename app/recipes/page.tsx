@@ -75,7 +75,7 @@ export default function RecipesPage() {
             <PageHero
                 title="Our Recipes"
                 subtitle="Authentic Indian flavours brought to your kitchen."
-                bg="https://images.unsplash.com/photo-1505935428862-770b6f24f629?auto=format&fit=crop&w=1920&q=80"
+                bg="/recipes-bg.webp"
             />
 
             <section className="recipe-showcase">

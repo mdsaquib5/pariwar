@@ -8,7 +8,7 @@ const products = [
         tagline: 'Pure stone-ground flour',
         price: 'From ₹180 / 5kg',
         href: '/shop/atta',
-        img: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=500&q=80',
+        img: '/hero-bg-1.webp',
         offset: 52,
     },
     {
@@ -16,7 +16,7 @@ const products = [
         tagline: 'Rich gram flour',
         price: 'From ₹95 / 1kg',
         href: '/shop/besan',
-        img: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?auto=format&fit=crop&w=500&q=80',
+        img: '/hero-bg-2.webp',
         offset: 18,
     },
     {
@@ -24,7 +24,7 @@ const products = [
         tagline: 'Silky milled semolina',
         price: 'From ₹60 / 1kg',
         href: '/shop/sooji',
-        img: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=500&q=80',
+        img: '/hero-bg-3.webp',
         offset: -24,
     },
     {
@@ -32,7 +32,7 @@ const products = [
         tagline: 'Light flattened rice',
         price: 'From ₹55 / 1kg',
         href: '/shop/poha',
-        img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=500&q=80',
+        img: '/hero-bg-4.webp',
         offset: 18,
     },
     {
@@ -40,7 +40,7 @@ const products = [
         tagline: 'High-fibre porridge',
         price: 'From ₹65 / 1kg',
         href: '/shop/dalia',
-        img: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80',
+        img: '/hero-bg-5.webp',
         offset: 52,
     },
 ];

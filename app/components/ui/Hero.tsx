@@ -26,7 +26,7 @@ interface Slide {
 
 const slides: Slide[] = [
     {
-        bg: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1920&q=80',
+        bg: '/hero-bg-1.webp',
         tag: 'Premium Quality',
         product: 'Whole Wheat Atta',
         line1: 'Pure From',
@@ -36,7 +36,7 @@ const slides: Slide[] = [
         badge: '100% Natural',
     },
     {
-        bg: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?auto=format&fit=crop&w=1920&q=80',
+        bg: '/hero-bg-2.webp',
         tag: 'Rich in Protein',
         product: 'Chickpea Besan',
         line1: 'Golden',
@@ -46,7 +46,7 @@ const slides: Slide[] = [
         badge: 'High Protein',
     },
     {
-        bg: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=1920&q=80',
+        bg: '/hero-bg-3.webp',
         tag: 'Finely Milled',
         product: 'Fine Sooji',
         line1: 'Silky',
@@ -56,7 +56,7 @@ const slides: Slide[] = [
         badge: 'Pure Wheat',
     },
     {
-        bg: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1920&q=80',
+        bg: '/hero-bg-4.webp',
         tag: 'Light & Fluffy',
         product: 'Thin Poha',
         line1: 'Morning',
@@ -66,7 +66,7 @@ const slides: Slide[] = [
         badge: 'Light & Healthy',
     },
     {
-        bg: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1920&q=80',
+        bg: '/hero-bg-5.webp',
         tag: 'High Fibre',
         product: 'Broken Dalia',
         line1: 'Nourishing',
