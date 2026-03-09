@@ -25,6 +25,10 @@
     .hero-counter {
         right: 16px;
     }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* <= 1024px */
@@ -173,6 +177,10 @@
     .recipe-grid-2col {
         grid-template-columns: 1fr;
     }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* <= 768px */
@@ -273,6 +281,14 @@
     /* Recipes */
     .recipe-card {
         padding: 24px;
+    }
+
+    .recipe-card__header {
+        gap: 16px;
+    }
+
+    .recipe-card__title {
+        font-size: 1.4rem;
     }
 }
 
@@ -432,6 +448,26 @@
 
     /* Recipes */
     .recipe-card__body {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-card {
+        padding: 20px;
+    }
+
+    .recipe-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .recipe-card__title {
+        font-size: 1.25rem;
+    }
+
+    .shop-grid {
         grid-template-columns: 1fr;
     }
 
