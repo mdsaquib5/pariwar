@@ -28,16 +28,38 @@ const contactCards = [
 ];
 
 export default function ContactPage() {
-    const [form, setForm] = useState({ name: '', email: '', message: '' });
+    const [form, setForm] = useState({ name: '', email: '', phone: '', city: '', state: '', message: '' });
     const [sent, setSent] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setSent(true);
+
+        try {
+            const response = await fetch('/api/send-mail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(form),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                setSent(true);
+                setForm({ name: '', email: '', phone: '', city: '', state: '', message: '' });
+                alert('Email sent successfully!');
+            } else {
+                alert('Failed to send email. Check console for details.');
+            }
+        } catch (error) {
+            console.error('Error sending email:', error);
+            alert('An error occurred while sending the email.');
+        }
     };
 
     return (
@@ -108,6 +130,44 @@ export default function ContactPage() {
                                                 required
                                             />
                                         </div>
+                                    </div>
+                                    <div className="contact-form__row">
+                                        <div className="contact-form__field">
+                                            <label htmlFor="phone">Phone Number</label>
+                                            <input
+                                                id="phone"
+                                                name="phone"
+                                                type="tel"
+                                                placeholder="+91 98765 43210"
+                                                value={form.phone}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                        <div className="contact-form__field">
+                                            <label htmlFor="city">City</label>
+                                            <input
+                                                id="city"
+                                                name="city"
+                                                type="text"
+                                                placeholder="e.g. Mumbai"
+                                                value={form.city}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="contact-form__field">
+                                        <label htmlFor="state">State</label>
+                                        <input
+                                            id="state"
+                                            name="state"
+                                            type="text"
+                                            placeholder="e.g. Maharashtra"
+                                            value={form.state}
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
                                     <div className="contact-form__field">
                                         <label htmlFor="message">Your Message</label>

@@ -52,14 +52,11 @@ const Footer = () => {
 
                     {/* Social Media Icons */}
                     <div className="footer-socials">
-                        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <Link href="https://www.facebook.com/p/deeppariwar-100084292295201/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebookF />
                         </Link>
                         <Link href="https://www.instagram.com/deeppariwar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram />
-                        </Link>
-                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                            <FaTwitter />
                         </Link>
                         <Link href="https://www.youtube.com/@DeepPariwar1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                             <FaYoutube />
