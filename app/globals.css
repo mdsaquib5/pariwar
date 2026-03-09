@@ -39,6 +39,8 @@ a {
     --gray-bg: #f4f4f4;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-playfair: 'Playfair Display', serif;
+    --gray-400: #888888;
+    --gray-700: #444444;
 }
 
 body {
@@ -1709,7 +1711,7 @@ section {
 .cta-input-group label {
     font-size: 0.82rem;
     font-weight: 700;
-    color: #444;
+    color: var(--gray-700);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -2703,7 +2705,7 @@ section {
 .contact-form__field label {
     font-size: 0.8rem;
     font-weight: 600;
-    color: #444;
+    color: var(--gray-700);
     letter-spacing: 0.3px;
 }
 
@@ -2787,7 +2789,7 @@ section {
 
 .contact-success p {
     font-size: 0.95rem;
-    color: #444;
+    color: var(--gray-700);
     line-height: 1.6;
 }
 
@@ -3022,7 +3024,7 @@ section {
 
 .about-pillar__desc {
     font-size: 0.82rem;
-    color: #888;
+    color: var(--gray-400);
     line-height: 1.55;
 }
 
@@ -3083,7 +3085,7 @@ section {
 
 .about-story__img-card span {
     font-size: 0.72rem;
-    color: #888;
+    color: var(--gray-400);
     font-weight: 600;
     text-align: center;
 }
@@ -3264,7 +3266,7 @@ section {
 
 .about-cert-card__desc {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--gray-400);
     line-height: 1.6;
 }
 
@@ -3622,7 +3624,7 @@ section {
     border-radius: 8px;
     padding: 8px;
     font-size: 0.9rem;
-    color: #444;
+    color: var(--gray-700);
     line-height: 1.4;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     flex: 1;
