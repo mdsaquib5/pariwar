@@ -1,7 +1,8 @@
 'use client';
 
 import SectionTitle from '../layout/SectionTitle';
-
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 const Vision = () => {
     return (
         <section className="vision">
@@ -19,14 +20,12 @@ const Vision = () => {
                     {/* Left Column */}
                     <div className="vision-left">
                         {/* Video Iframe */}
-                        <div className="vision-video-card" style={{ cursor: 'default' }}>
-                            <iframe
-                                className="vision-iframe"
-                                src="https://www.youtube.com/embed/j602dTRwuEM?autoplay=1&mute=1&loop=1&playlist=j602dTRwuEM&rel=0"
+                        <div className="vision-video-card" style={{ cursor: 'pointer' }}>
+                            <LiteYouTubeEmbed
+                                id="j602dTRwuEM"
                                 title="Deep Pariwar Vision"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
+                                wrapperClass="yt-lite vision-iframe"
+                                params="rel=0"
                             />
                         </div>
 

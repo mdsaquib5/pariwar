@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Deep Pariwar | Pure, Fresh & Wholesome Food Staples",
   description: "Deep Pariwar is your trusted partner for premium quality wheat atta, besan, sooji, and other pure food staples. Tradition meets purity.",
   keywords: "wheat atta, besan, sooji, poha, dalia, organic food, deep pariwar, healthy breakfast",
+  icons: {
+    icon: "/logo.webp",
+  },
 };
 
 export default function RootLayout({

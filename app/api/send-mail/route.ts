@@ -2,21 +2,21 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
 
-    const body = await req.json();
+  const body = await req.json();
 
-    const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-        },
-    });
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
 
-    try {
-        const isDistributor = body.message === 'New Distributor Application';
-        const subject = isDistributor ? "New Distributor Deep Pariwar Application" : "New Contact Inquiry - Deep Pariwar";
+  try {
+    const isDistributor = body.message === 'New Distributor Application';
+    const subject = isDistributor ? "New Distributor Deep Pariwar Application" : "New Contact Inquiry - Deep Pariwar";
 
-        const htmlTemplate = `
+    const htmlTemplate = `
           <html>
           <body style="font-family: 'Montserrat', sans-serif; background-color: #FDF8F3; padding: 20px;">
             <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #E4B44C;">
@@ -58,24 +58,24 @@ export async function POST(req: Request) {
               </div>
               <div style="background: #1F1F1F; padding: 30px; text-align: center; color: #999; font-size: 12px;">
                 <p style="margin-bottom: 10px;">&copy; 2026 Deep Pariwar. All Rights Reserved.</p>
-                <p>Designed for excellence in premium tea quality.</p>
+                <p>Designed for excellence in premium quality.</p>
               </div>
             </div>
           </body>
           </html>
         `;
 
-        await transporter.sendMail({
-            from: process.env.EMAIL_USER,
-            to: "mdsaquib5540@gmail.com",
-            subject: subject,
-            html: htmlTemplate,
-        });
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: "mdsaquib5540@gmail.com",
+      subject: subject,
+      html: htmlTemplate,
+    });
 
-        return Response.json({ success: true });
+    return Response.json({ success: true });
 
-    } catch (error) {
-        console.error("Error sending email:", error);
-        return Response.json({ success: false, error: (error as Error).message });
-    }
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return Response.json({ success: false, error: (error as Error).message });
+  }
 }
