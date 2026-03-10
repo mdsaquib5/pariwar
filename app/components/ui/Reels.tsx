@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import Image from 'next/image';
 import { IoPlay, IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5';
-import { FaInstagram } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 
 interface Reel {
     id: number;
@@ -74,7 +74,7 @@ const Reels = () => {
                 <div className="reels-header">
                     <div className="reels-header__left">
                         <span className="reels-eyebrow">
-                            <FaInstagram /> Youtube Shorts
+                            <FaYoutube /> Youtube Shorts
                         </span>
                         <h2 className="reels-title">Experience the <span className="reels-title__accent">Deep Pariwar</span> Story</h2>
                     </div>
