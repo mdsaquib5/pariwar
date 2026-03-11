@@ -5,7 +5,7 @@ import { IoArrowForward } from 'react-icons/io5';
 
 const products = [
     {
-        name: 'Whole Wheat Atta',
+        name: 'Wheat Flour (Atta)',
         tagline: 'Pure stone-ground flour',
         price: '180 / 5kg',
         href: '/shop',
@@ -13,7 +13,7 @@ const products = [
         offset: 52,
     },
     {
-        name: 'Chickpea Besan',
+        name: 'Pure Besan',
         tagline: 'Rich gram flour',
         price: '95 / 1kg',
         href: '/shop',
@@ -21,7 +21,7 @@ const products = [
         offset: 18,
     },
     {
-        name: 'Fine Sooji',
+        name: 'Premium Sooji',
         tagline: 'Silky milled semolina',
         price: '60 / 1kg',
         href: '/shop',
@@ -29,7 +29,7 @@ const products = [
         offset: -24,
     },
     {
-        name: 'Thin Poha',
+        name: 'Roasted Poha',
         tagline: 'Light flattened rice',
         price: '55 / 1kg',
         href: '/shop',
@@ -102,9 +102,9 @@ const Offering = () => {
                                     <h3 className="offering-card__name">{product.name}</h3>
                                     <p className="offering-card__tagline">{product.tagline}</p>
                                     <div className="offering-card__bottom">
-                                        <span className="offering-card__price">From ₹{product.price}</span>
+                                        {/* <span className="offering-card__price">From ₹{product.price}</span> Removed pricing */}
                                         <Link href={product.href} className="offering-card__link">
-                                            Shop <IoArrowForward size={13} />
+                                            View Product <IoArrowForward size={13} />
                                         </Link>
                                     </div>
                                 </div>

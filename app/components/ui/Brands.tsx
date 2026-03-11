@@ -18,31 +18,31 @@ interface BrandProduct {
 
 const products: BrandProduct[] = [
   {
-    name: 'Chakki Atta',
+    name: 'Wheat Flour',
     desc: 'Stone-ground whole wheat flour — crafted for authentic rotis & wholesome family meals every single day.',
     tag: '100% Natural',
     image: '/hero-bg-1.webp',
   },
   {
-    name: 'Golden Besan',
+    name: 'Besan',
     desc: 'Premium chickpea gram flour — perfect for crispy pakoras, soft kadhi & classic halwa.',
     tag: 'High Protein',
     image: '/hero-bg-2.webp',
   },
   {
-    name: 'Fine Maida',
+    name: 'Sooji',
     desc: 'Finely milled all-purpose flour — ideal for soft puris, fluffy naan & bakery delights.',
     tag: 'Finely Milled',
     image: '/hero-bg-3.webp',
   },
   {
-    name: 'Thin Poha',
+    name: 'Poha',
     desc: 'Light, fluffy flattened rice — the quickest & most delicious Indian breakfast every morning.',
     tag: 'Light & Healthy',
     image: '/hero-bg-4.webp',
   },
   {
-    name: 'Broken Dalia',
+    name: 'Dalia',
     desc: 'Wholesome broken wheat dalia — the perfect high-fibre porridge for a strong, healthy start.',
     tag: 'High Fibre',
     image: '/hero-bg-5.webp',

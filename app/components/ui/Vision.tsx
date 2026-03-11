@@ -31,7 +31,7 @@ const Vision = () => {
 
                         {/* Trust Card */}
                         <div className="vision-card vision-card--transparent">
-                            <h3 className="vision-card__title">Trust of over 20 years</h3>
+                            <h3 className="vision-card__title">Trust of 11 years</h3>
                             <div className="vision-card__divider" />
                             <p className="vision-card__desc">
                                 Since our inception, Deep Pariwar has pledged to bring excellence in taste, authentic texture, and premium nutrition to your kitchens. Over the years, we have reached thousands of households across the country, becoming a staple in everyday Indian cooking.

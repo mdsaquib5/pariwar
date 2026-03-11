@@ -29,6 +29,8 @@ const Footer = () => {
                         <span className="footer-nav-dot"></span>
                         <Link href="/recipes">Recipes</Link>
                         <span className="footer-nav-dot"></span>
+                        <Link href="/blogs">Blogs</Link>
+                        <span className="footer-nav-dot"></span>
                         <Link href="/contact">Contact</Link>
                     </nav>
 
@@ -36,16 +38,16 @@ const Footer = () => {
                     <div className="footer-contact">
                         <div className="footer-contact-item">
                             <FaMapMarkerAlt className="footer-contact-icon" />
-                            <span>123 Heritage Lane, Industrial Area, New Delhi, India 110001</span>
+                            <span>S.D Enterprises, Near Bright Public School, Khurja</span>
                         </div>
                         <div className="footer-contact-row">
                             <div className="footer-contact-item">
                                 <FaPhoneAlt className="footer-contact-icon" />
-                                <Link href="tel:+919876543210">+91 98765 43210</Link>
+                                <Link href="tel:+918126629159">+91 81266 29159</Link>
                             </div>
                             <div className="footer-contact-item">
                                 <FaEnvelope className="footer-contact-icon" />
-                                <Link href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</Link>
+                                <Link href="mailto:pariwaratta@gmail.com">pariwaratta@gmail.com</Link>
                             </div>
                         </div>
                     </div>

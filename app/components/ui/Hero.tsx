@@ -11,7 +11,6 @@ import 'swiper/css/thumbs';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IoArrowForward, IoChevronBack, IoChevronForward, IoLeafOutline } from 'react-icons/io5';
-import { LuShoppingBag } from 'react-icons/lu';
 import { TbWheat } from 'react-icons/tb';
 
 interface Slide {
@@ -29,41 +28,41 @@ const slides: Slide[] = [
     {
         bg: '/hero-bg-1.webp',
         tag: 'Premium Quality',
-        product: 'Whole Wheat Atta',
+        product: 'Wheat Flour (Atta)',
         line1: 'Pure From',
         line2: 'The Fields',
         desc: 'Stone-ground whole wheat flour — crafted for authentic rotis & wholesome family meals every day.',
-        price: '180 / 5kg',
+        price: '', // Removed pricing
         badge: '100% Natural',
     },
     {
         bg: '/hero-bg-2.webp',
         tag: 'Rich in Protein',
-        product: 'Chickpea Besan',
+        product: 'Pure Besan',
         line1: 'Golden',
         line2: 'Besan',
         desc: 'Premium chickpea gram flour — perfect for crispy pakoras, soft kadhi & classic halwa.',
-        price: '95 / 1kg',
+        price: '', // Removed pricing
         badge: 'High Protein',
     },
     {
         bg: '/hero-bg-3.webp',
         tag: 'Finely Milled',
-        product: 'Fine Sooji',
+        product: 'Premium Sooji',
         line1: 'Silky',
         line2: 'Sooji',
         desc: 'Finely milled semolina — perfect for fluffy upma, rich halwa & creamy sooji ki kheer.',
-        price: '60 / 1kg',
+        price: '', // Removed pricing
         badge: 'Pure Wheat',
     },
     {
         bg: '/hero-bg-4.webp',
         tag: 'Light & Fluffy',
-        product: 'Thin Poha',
+        product: 'Roasted Poha',
         line1: 'Morning',
         line2: 'Freshness',
         desc: 'Light, fluffy flattened rice — the quickest & most delicious Indian breakfast every morning.',
-        price: '55 / 1kg',
+        price: '', // Removed pricing
         badge: 'Light & Healthy',
     },
     {
@@ -73,7 +72,7 @@ const slides: Slide[] = [
         line1: 'Nourishing',
         line2: 'Dalia',
         desc: 'Wholesome broken wheat dalia — the perfect high-fibre porridge for a strong, healthy start.',
-        price: '65 / 1kg',
+        price: '', // Removed pricing
         badge: 'High Fibre',
     },
 ];
@@ -140,9 +139,9 @@ const Hero = () => {
                         <p className="hero-desc">{active.desc}</p>
                         <div className="hero-actions">
                             <Link href="/shop" className="hero-btn">
-                                Shop Now <IoArrowForward />
+                                Explore Products <IoArrowForward />
                             </Link>
-                            <span className="hero-price">From ₹{active.price}</span>
+                            {/* <span className="hero-price">From ₹{active.price}</span> Removed pricing */}
                         </div>
                     </div>
 
@@ -165,10 +164,10 @@ const Hero = () => {
                             <span className="hero-card__label">Featured Product</span>
                             <h3 className="hero-card__name">{active.product}</h3>
                             <div className="hero-card__footer">
-                                <strong className="hero-card__price">From ₹{active.price}</strong>
-                                <button className="hero-card__add" aria-label="Add to cart">
+                                {/* <strong className="hero-card__price">From ₹{active.price}</strong> Removed pricing */}
+                                {/* <button className="hero-card__add" aria-label="Add to cart">
                                     <LuShoppingBag size={15} />
-                                </button>
+                                </button> Removed cart button */}
                             </div>
                         </div>
                     </div>

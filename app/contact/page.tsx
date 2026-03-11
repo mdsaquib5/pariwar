@@ -82,7 +82,7 @@ export default function ContactPage() {
                                     <h3 className="contact-card__title">{card.title}</h3>
                                     <p className="contact-card__desc">{card.desc}</p>
                                     {card.cta && (
-                                        <Link href="mailto:hello@deeppariwar.com" className="contact-card__cta">
+                                        <Link href="mailto:pariwaratta@gmail.com" className="contact-card__cta">
                                             {card.cta}
                                         </Link>
                                     )}
@@ -192,7 +192,7 @@ export default function ContactPage() {
 
                             {/* WhatsApp */}
                             <a
-                                href="https://wa.me/919876543210"
+                                href="https://wa.me/918126629159"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="contact-whatsapp"
@@ -210,21 +210,21 @@ export default function ContactPage() {
                                     <FaMapMarkerAlt className="contact-info__icon" />
                                     <div>
                                         <strong>SD ENTERPRISES</strong>
-                                        <span>Industrial Area, Khurja, 203131, India</span>
+                                        <span>Near Bright Public School, Khurja, 203131, India</span>
                                     </div>
                                 </div>
                                 <div className="contact-info__item">
                                     <FaPhoneAlt className="contact-info__icon" />
                                     <div>
                                         <strong>Phone</strong>
-                                        <Link href="tel:+919876543210">+91 98765 43210</Link>
+                                        <Link href="tel:+918126629159">+91 81266 29159</Link>
                                     </div>
                                 </div>
                                 <div className="contact-info__item">
                                     <FaEnvelope className="contact-info__icon" />
                                     <div>
                                         <strong>Email</strong>
-                                        <Link href="mailto:hello@deeppariwar.com">hello@deeppariwar.com</Link>
+                                        <Link href="mailto:pariwaratta@gmail.com">pariwaratta@gmail.com</Link>
                                     </div>
                                 </div>
                             </div>
@@ -234,8 +234,8 @@ export default function ContactPage() {
                                 <div className="contact-info__item">
                                     <MdAccessTime className="contact-info__icon" size={20} />
                                     <div>
-                                        <strong>Mon – Sat</strong>
-                                        <span>9:30 AM – 6:30 PM</span>
+                                        <strong>Mon – Fri</strong>
+                                        <span>9:00 AM – 6:00 PM</span>
                                     </div>
                                 </div>
                             </div>
@@ -243,8 +243,8 @@ export default function ContactPage() {
                             {/* Map embed */}
                             <div className="contact-map">
                                 <iframe
-                                    title="SD Enterprises Location"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56168.52!2d77.855!3d28.255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c7c0000000000%3A0x0!2sKhurja%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1"
+                                    title="Deep Pariwar Location"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.1682135718534!2d77.8544366!3d28.262915799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca903b8941f5b%3A0x6a12ce48c5de3a59!2sDeep%20Pariwar!5e0!3m2!1sen!2sin!4v1773214241281!5m2!1sen!2sin"
                                     width="100%"
                                     height="220"
                                     style={{ border: 0, borderRadius: '16px' }}

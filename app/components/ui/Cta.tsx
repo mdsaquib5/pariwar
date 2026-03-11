@@ -58,7 +58,7 @@ const Cta = () => {
                         <ul className="cta-benefits">
                             <li>
                                 <TbRosetteDiscountCheckFilled />
-                                <span>20+ Years of Brand Trust</span>
+                                <span>11+ Years of Brand Trust</span>
                             </li>
                             <li>
                                 <TbRosetteDiscountCheckFilled />

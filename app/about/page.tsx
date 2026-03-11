@@ -44,6 +44,11 @@ const timeline = [
         title: 'Trusted by Thousands',
         desc: 'Now a household name across regions, trusted by families every single day.',
     },
+    {
+        year: '2026',
+        title: '11 Years of Excellence',
+        desc: 'Celebrating over a decade of trust, quality, and commitment to the health of Indian families.',
+    },
 ];
 
 const certifications = [
@@ -210,13 +215,6 @@ export default function AboutPage() {
                                 Our leadership blends traditional wisdom with modern practices to bring you the very best.
                             </p>
                             <div className="about-leadership__author">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-                                    alt="Founder"
-                                    className="about-leadership__avatar"
-                                    width={64}
-                                    height={64}
-                                />
                                 <div>
                                     <strong>Founder</strong>
                                     <span>Deep Pariwar</span>

@@ -8,39 +8,66 @@ import { TbShoppingCart, TbX } from 'react-icons/tb';
 const products = [
     {
         id: 1,
-        title: "Deep Pariwar Atta",
+        title: "Wheat Flour (Atta)",
         category: "PREMIUM FLOUR",
-        price: "12.00",
-        oldPrice: "15.00",
+        price: "180.00",
+        oldPrice: "200.00",
         desc: "Finely milled from the highest quality wheat grains to give you the softest, most highly nutritious rotis every single day.",
-        img: "/product-image.webp"
+        img: "/chakki-atta.webp"
     },
     {
         id: 2,
         title: "Pure Besan",
         category: "PREMIUM GRAM FLOUR",
-        price: "18.00",
-        oldPrice: "22.00",
+        price: "95.00",
+        oldPrice: "110.00",
         desc: "Made from 100% pure chana dal, ensuring a naturally sweet taste and perfect texture for festive sweets and savoury snacks.",
-        img: "/product-image.webp"
+        img: "/besan.webp"
     },
     {
         id: 3,
         title: "Roasted Poha",
         category: "BREAKFAST SPECIAL",
-        price: "8.00",
-        oldPrice: "10.00",
+        price: "55.00",
+        oldPrice: "70.00",
         desc: "Thick, wholesome flakes of rice that absorb flavors perfectly without losing their delicate, comforting bite.",
-        img: "/product-image.webp"
+        img: "/poha.webp"
     },
     {
         id: 4,
         title: "Premium Sooji",
         category: "SEMOLINA",
-        price: "6.00",
-        oldPrice: "8.00",
+        price: "60.00",
+        oldPrice: "75.00",
         desc: "Coarsely ground and fully roasted semolina, ideal for quick upmas, halwas, and crispy batter bases.",
-        img: "/product-image.webp"
+        img: "/sooji.webp"
+    },
+    {
+        id: 5,
+        title: "Broken Dalia",
+        category: "HEALTHY GRAINS",
+        price: "65.00",
+        oldPrice: "80.00",
+        desc: "Wholesome broken wheat, perfect for high-fibre porridges and healthy breakfast options.",
+        img: "/dalia.webp"
+    },
+    {
+        id: 6,
+        title: "Fine Maida",
+        category: "REFINED FLOUR",
+        price: "45.00",
+        oldPrice: "55.00",
+        desc: "Premium quality refined wheat flour, perfect for baking, parathas, and snacks.",
+        img: "/maida.webp"
+    },
+    {
+        id: 7,
+        title: "Makki Atta",
+        category: "CORN FLOUR",
+        price: "50.00",
+        oldPrice: "65.00",
+        desc: "Authentic maize flour, stone-ground for the perfect texture and traditional flavor.",
+        img: "/makki-atta.webp"
     }
 ];
 
@@ -80,10 +107,10 @@ export default function ShopPage() {
                                 <div className="product-card__header">
                                     <div className="product-card__info">
                                         <h3 className="product-card__title">{product.title}</h3>
-                                        <div className="product-card__prices">
+                                        {/* <div className="product-card__prices">
                                             <span className="product-card__price">₹{product.price}</span>
                                             {product.oldPrice && <span className="product-card__old-price">₹{product.oldPrice}</span>}
-                                        </div>
+                                        </div> Removed Pricing */}
                                     </div>
                                     <button
                                         className="product-card__cart-btn"
@@ -144,12 +171,12 @@ export default function ShopPage() {
                                 <span className="product-popup__category">{selectedProduct.category}</span>
                                 <h2 className="product-popup__title">{selectedProduct.title}</h2>
 
-                                <div className="product-popup__prices">
+                                {/* <div className="product-popup__prices">
                                     <span className="product-popup__price">₹{selectedProduct.price}</span>
                                     {selectedProduct.oldPrice && (
                                         <span className="product-popup__old-price">₹{selectedProduct.oldPrice}</span>
                                     )}
-                                </div>
+                                </div> Removed Pricing */}
 
                                 <p className="product-popup__desc">
                                     {selectedProduct.desc}

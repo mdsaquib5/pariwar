@@ -25,46 +25,6 @@ const recipes = [
         img: "/product.webp",
         ingredients: ["Deep Pariwar Besan", "Ghee", "Powdered Sugar", "Cardamom"],
         method: ["Roast besan in ghee till golden", "Let it cool slightly", "Mix sugar and shape into rounds"]
-    },
-    {
-        title: "Classic Atta Halwa",
-        category: "Dessert",
-        duration: "20 mins",
-        difficulty: "Beginner",
-        badge: "Comfort Food",
-        img: "/product.webp",
-        ingredients: ["Deep Pariwar Atta", "Ghee", "Sugar", "Water / Milk"],
-        method: ["Roast atta in ghee continuously", "Add sugar syrup carefully", "Stir until it stops sticking to pan"]
-    },
-    {
-        title: "Maharashtrian Poha",
-        category: "Breakfast",
-        duration: "15 mins",
-        difficulty: "Beginner",
-        badge: "Quick Breakfast",
-        img: "/product.webp",
-        ingredients: ["Deep Pariwar Poha", "Onions & Peanuts", "Turmeric", "Curry Leaves"],
-        method: ["Wash and drain poha", "Sauté spices, peanuts and onions", "Mix poha and garnish with coriander"]
-    },
-    {
-        title: "Crispy Sooji Upma",
-        category: "Breakfast",
-        duration: "20 mins",
-        difficulty: "Beginner",
-        badge: "Healthy Choice",
-        img: "/product.webp",
-        ingredients: ["Deep Pariwar Sooji", "Mustard Seeds", "Mixed Veggies", "Water"],
-        method: ["Dry roast sooji", "Temper spices and boil vegetables in water", "Slowly add sooji and simmer"]
-    },
-    {
-        title: "Instant Wheat Dosa",
-        category: "Breakfast and Savoury",
-        duration: "15 mins",
-        difficulty: "Intermediate",
-        badge: "Healthy & Quick",
-        img: "/product.webp",
-        ingredients: ["Deep Pariwar Atta", "Rice Flour (Optional)", "Curd", "Water"],
-        method: ["Whisk atta, curd and water into a smooth batter", "Rest for 10 mins", "Pour on hot pan and crisp with oil"]
     }
 ];
 

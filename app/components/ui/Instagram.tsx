@@ -112,7 +112,6 @@ const Instagram = () => {
                                 className="ig-modal__img-tag"
                                 width={800}
                                 height={800}
-                                style={{ objectFit: 'contain' }}
                             />
                         </div>
 
@@ -121,14 +120,14 @@ const Instagram = () => {
                             <div className="ig-modal__header">
                                 <div className="ig-avatar">DP</div>
                                 <div>
-                                    <h4>DeepPariwarOfficial</h4>
+                                    <h4>deeppariwar</h4>
                                 </div>
                             </div>
                             <div className="ig-modal__body">
                                 <p><strong>DeepPariwarOfficial</strong> {selectedPost.caption}</p>
                             </div>
                             <div className="ig-modal__footer">
-                                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="ig-btn">
+                                <Link href="https://www.instagram.com/deeppariwar/" target="_blank" rel="noopener noreferrer" className="ig-btn">
                                     View on Instagram
                                 </Link>
                             </div>

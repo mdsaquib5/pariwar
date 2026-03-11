@@ -3418,6 +3418,7 @@ section {
     object-fit: cover;
     flex-shrink: 0;
     border: 2px solid var(--primary-color);
+    filter: blur(1px);
 }
 
 .about-leadership__author div {
@@ -3788,7 +3789,6 @@ section {
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--white);
-    font-family: var(--font-primary, sans-serif);
     line-height: 1.3;
 }
 
