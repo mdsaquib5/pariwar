@@ -18,13 +18,21 @@ const Vision = () => {
                     {/* Left Column */}
                     <div className="vision-left">
                         <div className="vision-video-card">
-                            <iframe
-                                src="https://www.youtube.com/embed/j602dTRwuEM?autoplay=1&mute=1&loop=1&playlist=j602dTRwuEM&rel=0&controls=0"
+                            {/* <iframe
+                                src="https://www.youtube.com/embed/j602dTRwuEM?autoplay=1&mute=1&loop=1&playlist=j602dTRwuEM,j602dTRwuEM&rel=0&controls=0"
                                 title="Deep Pariwar Vision"
                                 className="vision-iframe"
                                 style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
+                            /> */}
+                            <video
+                                src="/utube-video.mp4"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="vision-iframe"
                             />
                         </div>
 
