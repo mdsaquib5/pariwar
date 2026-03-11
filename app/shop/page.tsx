@@ -13,7 +13,7 @@ const products = [
         price: "180.00",
         oldPrice: "200.00",
         desc: "Finely milled from the highest quality wheat grains to give you the softest, most highly nutritious rotis every single day.",
-        img: "/chakki-atta.png"
+        img: "/product-chakki.png"
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const products = [
         price: "95.00",
         oldPrice: "110.00",
         desc: "Made from 100% pure chana dal, ensuring a naturally sweet taste and perfect texture for festive sweets and savoury snacks.",
-        img: "/besan.png"
+        img: "/product-besan.png"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const products = [
         price: "55.00",
         oldPrice: "70.00",
         desc: "Thick, wholesome flakes of rice that absorb flavors perfectly without losing their delicate, comforting bite.",
-        img: "/poha.png"
+        img: "/product-poha.png"
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const products = [
         price: "60.00",
         oldPrice: "75.00",
         desc: "Coarsely ground and fully roasted semolina, ideal for quick upmas, halwas, and crispy batter bases.",
-        img: "/sooji.png"
+        img: "/sooji-pro.png"
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const products = [
         price: "65.00",
         oldPrice: "80.00",
         desc: "Wholesome broken wheat, perfect for high-fibre porridges and healthy breakfast options.",
-        img: "/dalia.png"
+        img: "/product-dalia.png"
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const products = [
         price: "45.00",
         oldPrice: "55.00",
         desc: "Premium quality refined wheat flour, perfect for baking, parathas, and snacks.",
-        img: "/maida.png"
+        img: "/product-maida.png"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const products = [
         price: "50.00",
         oldPrice: "65.00",
         desc: "Authentic maize flour, stone-ground for the perfect texture and traditional flavor.",
-        img: "/makki-atta.png"
+        img: "/product-makki.png"
     }
 ];
 
@@ -163,7 +163,6 @@ export default function ShopPage() {
                                     className="product-popup__img"
                                     width={600}
                                     height={600}
-                                    style={{ objectFit: 'contain' }}
                                 />
                             </div>
 

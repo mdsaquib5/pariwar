@@ -4022,10 +4022,11 @@ section {
     position: relative;
     border-radius: 12px;
     background: #fff;
-    padding: 5px;
+    /* padding: 5px; */
     /* aspect-ratio: 1 / 1; */
     overflow: hidden;
     cursor: pointer;
+    height: 460px;
 }
 
 .product-card__img {
@@ -4113,7 +4114,7 @@ section {
 
 .product-popup__img-wrap {
     background: #fff;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4123,7 +4124,7 @@ section {
 .product-popup__img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .product-popup__content {

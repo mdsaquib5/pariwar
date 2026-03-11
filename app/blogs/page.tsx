@@ -23,7 +23,7 @@ const blogPosts = [
         date: "March 08, 2024",
         author: "Chef Anita",
         category: "Health",
-        img: "/group-product.png",
+        img: "/product-maida.png",
         relatedProduct: "Wheat Flour (Atta)"
     },
     {
@@ -33,7 +33,7 @@ const blogPosts = [
         date: "March 05, 2024",
         author: "Pariwar Kitchen",
         category: "Lifestyle",
-        img: "/group-product.png",
+        img: "/product-besan.png",
         relatedProduct: "Deep Pariwar"
     }
 ];

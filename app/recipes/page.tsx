@@ -12,7 +12,7 @@ const recipes = [
         duration: "35 mins",
         difficulty: "Expert",
         badge: "Deep Pariwar Classic",
-        img: "/product.png",
+        img: "/product-maida.png",
         ingredients: ["Maida", "Sugar", "Ghee"],
         method: ["Make dough", "Cut pieces", "Deep fry till golden"]
     },

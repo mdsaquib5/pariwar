@@ -85,7 +85,7 @@ const blogData: Record<number, BlogEntry> = {
         author: "Chef Anita",
         readTime: "4 min read",
         category: "Health",
-        img: "/group.png",
+        img: "/product-maida.png",
         relatedProduct: "Wheat Flour (Atta)",
         content: (
             <div className="blog-full-content">
@@ -145,7 +145,7 @@ const blogData: Record<number, BlogEntry> = {
         author: "Pariwar Kitchen",
         readTime: "3 min read",
         category: "Lifestyle",
-        img: "/group.png",
+        img: "/product-besan.png",
         relatedProduct: "Deep Pariwar",
         content: (
             <div className="blog-full-content">
