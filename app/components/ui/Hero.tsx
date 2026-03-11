@@ -15,6 +15,7 @@ import { TbWheat } from 'react-icons/tb';
 
 interface Slide {
     bg: string;
+    productImg: string;
     tag: string;
     product: string;
     line1: string;
@@ -27,6 +28,7 @@ interface Slide {
 const slides: Slide[] = [
     {
         bg: '/hero-bg-1.webp',
+        productImg: '/chakki-atta.webp',
         tag: 'Premium Quality',
         product: 'Wheat Flour (Atta)',
         line1: 'Pure From',
@@ -37,6 +39,7 @@ const slides: Slide[] = [
     },
     {
         bg: '/hero-bg-2.webp',
+        productImg: '/besan.webp',
         tag: 'Rich in Protein',
         product: 'Pure Besan',
         line1: 'Golden',
@@ -47,6 +50,7 @@ const slides: Slide[] = [
     },
     {
         bg: '/hero-bg-3.webp',
+        productImg: '/sooji.webp',
         tag: 'Finely Milled',
         product: 'Premium Sooji',
         line1: 'Silky',
@@ -57,6 +61,7 @@ const slides: Slide[] = [
     },
     {
         bg: '/hero-bg-4.webp',
+        productImg: '/poha.webp',
         tag: 'Light & Fluffy',
         product: 'Roasted Poha',
         line1: 'Morning',
@@ -67,6 +72,7 @@ const slides: Slide[] = [
     },
     {
         bg: '/hero-bg-5.webp',
+        productImg: '/dalia.webp',
         tag: 'High Fibre',
         product: 'Broken Dalia',
         line1: 'Nourishing',
@@ -152,12 +158,12 @@ const Hero = () => {
                         </div>
                         <div className="hero-card__image">
                             <Image
-                                src={active.bg}
+                                src={active.productImg}
                                 alt={active.product}
                                 fill
                                 priority={true}
                                 sizes="(max-width: 768px) 100vw, 400px"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                         <div className="hero-card__body">

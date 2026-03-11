@@ -9,7 +9,7 @@ const products = [
         tagline: 'Pure stone-ground flour',
         price: '180 / 5kg',
         href: '/shop',
-        img: '/hero-bg-1.webp',
+        img: '/chakki-atta.webp',
         offset: 52,
     },
     {
@@ -17,7 +17,7 @@ const products = [
         tagline: 'Rich gram flour',
         price: '95 / 1kg',
         href: '/shop',
-        img: '/hero-bg-2.webp',
+        img: '/besan.webp',
         offset: 18,
     },
     {
@@ -25,7 +25,7 @@ const products = [
         tagline: 'Silky milled semolina',
         price: '60 / 1kg',
         href: '/shop',
-        img: '/hero-bg-3.webp',
+        img: '/sooji.webp',
         offset: -24,
     },
     {
@@ -33,7 +33,7 @@ const products = [
         tagline: 'Light flattened rice',
         price: '55 / 1kg',
         href: '/shop',
-        img: '/hero-bg-4.webp',
+        img: '/poha.webp',
         offset: 18,
     },
     {
@@ -41,7 +41,7 @@ const products = [
         tagline: 'High-fibre porridge',
         price: '65 / 1kg',
         href: '/shop',
-        img: '/hero-bg-5.webp',
+        img: '/dalia.webp',
         offset: 52,
     },
 ];
