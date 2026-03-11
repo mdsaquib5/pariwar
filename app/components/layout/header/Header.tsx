@@ -68,13 +68,13 @@ const Header = () => {
                     </nav>
 
                     <div className="header-actions">
-                        {/* <Link href="/" className="header-icon" aria-label="Cart">
-                            <IoBagOutline size={22} />
-                            <span className="header-icon__badge">0</span>
+                        <Link href="/" className="header-icon" aria-label="Cart">
+                             <IoBagOutline size={22} />
+                             <span className="header-icon__badge">0</span>
                         </Link>
                         <Link href="/" className="header-icon" aria-label="Account">
-                            <IoPersonOutline size={22} />
-                        </Link> Removed Cart and Account icons */}
+                             <IoPersonOutline size={22} />
+                        </Link>
 
                         <button
                             className={`header-hamburger${drawerOpen ? ' header-hamburger--open' : ''}`}
@@ -130,14 +130,14 @@ const Header = () => {
                 </nav>
 
                 <div className="drawer-footer">
-                    {/* <Link href="/" className="drawer-action-btn" onClick={closeDrawer}>
+                    <Link href="/" className="drawer-action-btn" onClick={closeDrawer}>
                         <IoBagOutline size={18} />
                         Cart
                     </Link>
                     <Link href="/" className="drawer-action-btn" onClick={closeDrawer}>
                         <IoPersonOutline size={18} />
                         Account
-                    </Link> Removed Cart and Account from Drawer */}
+                    </Link>
                 </div>
             </aside>
         </>
