@@ -112,6 +112,11 @@ section {
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
+        padding-inline: 20px;
+    }
+
+    section {
+        padding-block: 50px;
     }
 }
 
@@ -214,9 +219,15 @@ section {
     color: rgba(30, 25, 20, 0.75);
 }
 
-.site-header--scrolled .header-hamburger:hover {
-    background: rgba(0, 0, 0, 0.06);
-    color: var(--dark);
+@media (max-width: 992px) {
+    .about-story__grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+    
+    .about-story__img-wrap {
+        order: -1;
+    }
 }
 
 .site-header--scrolled .header-logo__text {
@@ -380,7 +391,7 @@ section {
 }
 
 .header-hamburger {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -392,6 +403,18 @@ section {
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.85);
     transition: background 0.2s ease, color 0.2s ease;
+}
+
+@media (min-width: 993px) {
+    .header-hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-nav {
+        display: none;
+    }
 }
 
 .header-hamburger:hover {
@@ -660,6 +683,17 @@ section {
     pointer-events: all;
 }
 
+@media (max-width: 992px) {
+    .hero-anim-wrap {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        gap: 40px;
+    }
+}
+
 .hero-left {
     flex: 1;
     max-width: 60%;
@@ -668,6 +702,18 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .hero-left {
+        max-width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .hero-border {
+        display: none;
+    }
 }
 
 .hero-border {
@@ -814,8 +860,6 @@ section {
 .hero-card__image {
     position: relative;
     height: 160px;
-    background: #fff;
-    padding: 10px;
     transition: transform 0.5s ease;
     overflow: hidden;
 }
@@ -1395,6 +1439,34 @@ section {
     z-index: 2;
 }
 
+@media (max-width: 1200px) {
+    .offering-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offering-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .offering-arch {
+        display: none;
+    }
+    
+    .offering-grid-wrap {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offering-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .offering-card {
     background: var(--white);
     border-radius: 20px;
@@ -1414,8 +1486,6 @@ section {
     position: relative;
     width: 100%;
     height: 190px;
-    background: #fff;
-    padding: 10px;
     transition: transform 0.5s ease;
     overflow: hidden;
 }
@@ -1532,6 +1602,12 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+}
+
+@media (max-width: 992px) {
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .vision-left,
@@ -1814,6 +1890,24 @@ section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .instagram-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .instagram-item {
@@ -2633,6 +2727,12 @@ section {
     z-index: 1;
 }
 
+@media (max-width: 992px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact-card {
     background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(18px);
@@ -2710,6 +2810,19 @@ section {
     grid-template-columns: 1fr 380px;
     gap: 48px;
     align-items: start;
+}
+
+@media (max-width: 1200px) {
+    .contact-grid {
+        grid-template-columns: 1fr 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 }
 
 /* --- Form --- */
@@ -3192,6 +3305,30 @@ section {
     padding-left: calc(50% + 40px);
 }
 
+@media (max-width: 768px) {
+    .about-timeline__line {
+        left: 20px;
+    }
+
+    .about-timeline__item {
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-timeline__dot {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+
+    .about-timeline__item--left,
+    .about-timeline__item--right {
+        padding-left: 50px;
+        padding-right: 0;
+    }
+}
+
 .about-timeline__card {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(20px);
@@ -3273,6 +3410,18 @@ section {
     gap: 24px;
 }
 
+@media (max-width: 992px) {
+    .about-certs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-certs {
+        grid-template-columns: 1fr;
+    }
+}
+
 .about-cert-card {
     background: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.07);
@@ -3325,6 +3474,13 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 64px;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .about-bottom__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
 .about-trust {
@@ -3457,6 +3613,12 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+}
+
+@media (max-width: 992px) {
+    .recipe-grid-2col {
+        grid-template-columns: 1fr;
+    }
 }
 
 .recipe-card {
@@ -3757,6 +3919,25 @@ section {
     gap: 24px;
 }
 
+@media (max-width: 1200px) {
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Product Card */
 .product-card {
     background: #000;
@@ -3840,11 +4021,10 @@ section {
     position: relative;
     border-radius: 12px;
     background: #fff;
-    padding: 15px;
-    aspect-ratio: 1 / 1;
+    padding: 5px;
+    /* aspect-ratio: 1 / 1; */
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .product-card__img {

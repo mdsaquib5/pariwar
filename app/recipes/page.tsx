@@ -12,19 +12,19 @@ const recipes = [
         duration: "35 mins",
         difficulty: "Expert",
         badge: "Deep Pariwar Classic",
-        img: "/product.webp",
+        img: "/product.png",
         ingredients: ["Maida", "Sugar", "Ghee"],
         method: ["Make dough", "Cut pieces", "Deep fry till golden"]
     },
     {
-        title: "Authentic Besan Ladoo",
-        category: "Dessert",
+        title: "Vermicelli Biryani",
+        category: "Lunch and Dinner",
         duration: "45 mins",
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         badge: "Festive Favourite",
-        img: "/product.webp",
-        ingredients: ["Deep Pariwar Besan", "Ghee", "Powdered Sugar", "Cardamom"],
-        method: ["Roast besan in ghee till golden", "Let it cool slightly", "Mix sugar and shape into rounds"]
+        img: "/product.png",
+        ingredients: ["1 cup Vermicelli", "Mixed vegetables", "Spices", "Oil"],
+        method: ["Roast vermicelli lightly", "Saute vegetables", "Add spices and cook well"]
     }
 ];
 
