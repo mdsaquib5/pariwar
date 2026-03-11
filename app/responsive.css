@@ -574,4 +574,8 @@
         height: 350px;
         object-position: 80% center;
     }
+
+    .product-popup__grid {
+        grid-template-columns: 1fr;
+    }
 }
