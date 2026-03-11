@@ -22,153 +22,170 @@ interface BlogEntry {
 const blogData: Record<number, BlogEntry> = {
     1: {
         id: 1,
-        title: "The Ultimate Guide to Choosing the Best Atta for Soft Rotis",
+        title: "From Khurja to NCR: The Journey of Deep Pariwar",
         date: "March 10, 2024",
         author: "Pariwar Kitchen",
-        readTime: "5 min read",
+        readTime: "6 min read",
         category: "Nutrition",
-        img: "/product.webp",
-        relatedProduct: "Deep Pariwar Atta",
+        img: "/group-product.png",
+        relatedProduct: "Deep Pariwar",
         content: (
             <div className="blog-full-content">
                 <p>
-                    Choosing the right <strong>atta (whole wheat flour)</strong> is the first step toward making that perfect, cloud-soft roti.
-                    In Indian households, the quality of your daily bread defines the meal. But with so many varieties available, how do you
-                    know which one is best for your health and your palate?
+                    In the heart of Khurja, a town deeply connected with tradition and trade, three brothers laid the foundation of a dream in 2001. Under the banner of <strong>S.D Enterprises</strong>, Mr. Pramod Kumar, Mr. Anil Kumar Agrawal, and Mr. Kushal Kumar began building what would soon become a trusted household name — <strong>Deep Pariwar</strong>.
                 </p>
 
-                <blockquote>
-                    &ldquo;The secret to a soft roti isn&apos;t just in the kneading; it begins with the soul of the grain.&rdquo;
-                    <cite>&mdash; Traditional Indian Proverb</cite>
-                </blockquote>
-
-                <h3>1. Understand the Milling Process</h3>
                 <p>
-                    Modern industrial milling often strips away the nutritious bran and germ. However, <strong>Deep Pariwar Atta</strong>
-                    is stone-ground to ensure that all the natural goodness stays intact.
+                    What started as a small initiative rooted in hard work and family values gradually evolved into a respected flour and food products brand serving families across Delhi NCR.
                 </p>
+
+                <h3>A Brand Built on Trust and Quality</h3>
+                <p>
+                    Deep Pariwar was not created overnight. It grew steadily through consistency, purity, and commitment to quality. The founders shared a deep connection with the agrarian culture of North India, understanding what truly matters in Indian kitchens — freshness, nutrition, and reliability.
+                </p>
+
+                <p>
+                    Today, under the leadership of Mr. Kushal Kumar, the company continues to strengthen its presence while staying true to its founding values.
+                </p>
+
+                <h3>More Than Just Wheat Flour</h3>
+                <p>Our commitment to purity extends across a wide range of kitchen essentials:</p>
                 <ul>
-                    <li><strong>Chakki Fresh:</strong> Slow-grinding retains nutrients and moisture.</li>
-                    <li><strong>High Fibre:</strong> Vital for digestive health and long-lasting energy.</li>
-                    <li><strong>No Additives:</strong> Pure flour without bleach or preservatives.</li>
+                    <li><strong>Sooji (Semolina)</strong> – Perfect for sweet and savory dishes</li>
+                    <li><strong>Dalia (Cracked Wheat)</strong> – A healthy breakfast staple</li>
+                    <li><strong>Poha (Flattened Rice)</strong> – A beloved Indian snack base</li>
+                    <li><strong>Maida</strong> – Essential for bakery creations</li>
+                    <li><strong>Besan (Gram Flour)</strong> – Rich in protein and versatile</li>
+                    <li><strong>Makki Atta</strong> – A North Indian traditional favorite</li>
                 </ul>
-
-                <h3>2. Look for the Gluten Balance</h3>
                 <p>
-                    Gluten is what gives rotis their elasticity. A high-quality Sharbati wheat, for instance, has a superior gluten
-                    profile that allows the dough to hold more water, resulting in <em>softer rotis</em> that stay fresh for hours.
+                    Each product reflects the brand’s commitment to quality and evolving nutritional preferences of Indian families.
                 </p>
 
-                <ol>
-                    <li>Sieve the flour to remove any large impurities.</li>
-                    <li>Add water slowly while kneading to reach a soft, non-sticky consistency.</li>
-                    <li>Let the dough rest for at least 15-20 minutes before rolling.</li>
-                </ol>
-
-                <h3>Conclusion</h3>
+                <h3>Rooted in Tradition, Growing with Modern Demands</h3>
                 <p>
-                    Investing in premium flour like <Link href="/shop">Deep Pariwar Sharbati Atta</Link> ensures that your family
-                    gets the best nutrition without compromising on taste.
+                    Operating from Khurja and supplying retailers across Delhi NCR, Deep Pariwar has built strong distribution networks while maintaining a personalized approach — something often lost in large industrial brands.
+                </p>
+
+                <p>
+                    By balancing traditional milling values with modern business practices, the company supports agricultural value chains, generates employment, and contributes to regional growth.
+                </p>
+
+                <h3>Looking Ahead</h3>
+                <p>
+                    With over two decades of experience and a loyal customer base, Deep Pariwar is positioned for continued regional expansion. The mission remains simple — to deliver dependable kitchen staples Indian families can trust every day.
                 </p>
             </div>
         )
     },
     2: {
         id: 2,
-        title: "Why Pure Besan is a Must-Have in Your Healthy Diet",
+        title: "The Secret Behind Soft Rotis: Why Quality Wheat Flour Matters",
         date: "March 08, 2024",
         author: "Chef Anita",
         readTime: "4 min read",
         category: "Health",
-        img: "/product.webp",
-        relatedProduct: "Pure Besan",
+        img: "/group.png",
+        relatedProduct: "Wheat Flour (Atta)",
         content: (
             <div className="blog-full-content">
                 <p>
-                    Besan, or gram flour, has been a cornerstone of Indian cuisine for centuries. Beyond its delicious taste in
-                    <em>pakoras</em> and <em>laddoos</em>, it is a powerhouse of nutrition.
+                    In every Indian household, the sound of dough being kneaded and rotis puffing on the tawa is more than just cooking — it is tradition. From morning breakfasts to warm family dinners, wheat flour remains the backbone of Indian kitchens.
                 </p>
 
-                <h3>Rich in Plant Protein</h3>
                 <p>
-                    For vegetarians, besan is one of the most accessible sources of high-quality protein. It helps in muscle repair
-                    and keeps you feeling full longer.
+                    But have you ever wondered why some rotis turn out soft and fluffy, while others become dry within minutes? <strong>The answer lies in the quality of wheat flour.</strong>
                 </p>
 
-                <blockquote>
-                    &ldquo;Replacing refined flour with besan is one of the simplest ways to boost your daily protein intake.&rdquo;
-                </blockquote>
+                <h3>The Journey from Farm to Kitchen</h3>
+                <p>
+                    In regions like Uttar Pradesh, wheat farming has deep cultural roots. Soil quality, climate, and harvesting techniques influence grain nutrition and texture. Carefully selected wheat retains essential nutrients, fiber, and aroma when milled properly.
+                </p>
 
+                <p>
+                    Deep Pariwar maintains consistent grinding standards to preserve natural freshness and fiber content.
+                </p>
+
+                <h3>Why Flour Quality Impacts Health</h3>
                 <ul>
-                    <li><strong>Low Glycemic Index:</strong> Great for maintaining healthy blood sugar levels.</li>
-                    <li><strong>Gluten-Free:</strong> A perfect alternative for those with gluten sensitivities.</li>
-                    <li><strong>Rich in Folate:</strong> Essential for heart health and cell growth.</li>
+                    <li><strong>Better fiber content</strong> – Essential for digestive health.</li>
+                    <li><strong>Improved digestion</strong> – Natural grains are easier on the stomach.</li>
+                    <li><strong>Sustained energy levels</strong> – Complex carbs for all-day vitality.</li>
+                    <li><strong>Softer and more elastic dough</strong> – Easier to knead and roll.</li>
                 </ul>
 
                 <p>
-                    Check out our <Link href="/shop">Premium Besan</Link> made from 100% pure Chana Dal.
+                    For families consuming rotis daily, even small quality differences matter over time.
                 </p>
+
+                <h3>Taste Is Tradition</h3>
+                <p>
+                    Whether it’s soft phulkas, layered parathas, or crispy pooris, texture defines Indian cuisine. Consumers across Delhi NCR increasingly prefer brands that balance tradition with consistency.
+                </p>
+
+                <p>
+                    That’s why regional brands rooted in quality, like <strong>Deep Pariwar</strong>, continue building trust among households.
+                </p>
+
+                <h3>More Than Just Flour</h3>
+                <p>
+                    Beyond wheat flour, Deep Pariwar also offers sooji, dalia, poha, maida, besan, and makki atta — supporting both traditional and modern recipes.
+                </p>
+
+                <blockquote>
+                    &ldquo;Because food is not just nutrition — it is emotion.&rdquo;
+                </blockquote>
             </div>
         )
     },
     3: {
         id: 3,
-        title: "Roasted Poha: A Nutritious and Easy Breakfast for Busy Mornings",
+        title: "Regional Brands Are Rising: Why Families Choose Trust Over Corporations",
         date: "March 05, 2024",
         author: "Pariwar Kitchen",
         readTime: "3 min read",
         category: "Lifestyle",
-        img: "/product.webp",
-        relatedProduct: "Roasted Poha",
+        img: "/group.png",
+        relatedProduct: "Deep Pariwar",
         content: (
             <div className="blog-full-content">
                 <p>
-                    In the rush of the morning, finding a breakfast that is both <strong>quick and healthy</strong> can be a challenge.
-                    Roasted Poha is the answer for thousands of active families.
-                </p>
-
-                <h3>Why Poha?</h3>
-                <ol>
-                    <li><strong>Easy to Digest:</strong> Lightweight on the stomach yet satisfying.</li>
-                    <li><strong>Rich in Iron:</strong> Helps prevent anemia and boosts energy.</li>
-                    <li><strong>Low Calorie:</strong> Ideal for weight management.</li>
-                </ol>
-
-                <p>
-                    Our <Link href="/shop">Roasted Poha</Link> is pre-cleaned and ready to cook, saving you precious minutes
-                    during your morning routine.
-                </p>
-            </div>
-        )
-    },
-    4: {
-        id: 4,
-        title: "The Versatility of Sooji: From Breakfast Upma to Festive Halwas",
-        date: "March 02, 2024",
-        author: "Chef Anita",
-        readTime: "6 min read",
-        category: "Recipes",
-        img: "/product.webp",
-        relatedProduct: "Premium Sooji",
-        content: (
-            <div className="blog-full-content">
-                <p>
-                    Sooji (Semolina) is arguably the most versatile ingredient in an Indian pantry. Whether it&apos;s the savory
-                    warmth of an <strong>Upma</strong> or the decadent sweetness of <strong>Halwa</strong>, it never fails.
+                    Over the last decade, Indian consumers have become more conscious about what they bring into their kitchens. While multinational brands dominate advertising, many families are returning to trusted regional names.
                 </p>
 
                 <blockquote>
-                    &ldquo;A pantry without sooji is a pantry without possibilities.&rdquo;
+                    &ldquo;Because trust feels closer to home.&rdquo;
                 </blockquote>
 
-                <h3>Cooking Tips for Perfect Texture</h3>
+                <h3>The Power of Local Manufacturing</h3>
                 <ul>
-                    <li><strong>Roasting:</strong> Always dry-roast your sooji until it releases a nutty aroma.</li>
-                    <li><strong>Water Ratio:</strong> Use 3 parts water to 1 part sooji for a fluffy, soft Upma.</li>
+                    <li><strong>Faster supply chains</strong> – Fresher products from factory to shelf.</li>
+                    <li><strong>Better quality control</strong> – Personalized attention to every batch.</li>
+                    <li><strong>Personalized retailer relationships</strong> – Building trust with local shopkeepers.</li>
+                    <li><strong>Stronger community connections</strong> – Supporting local employment and growth.</li>
                 </ul>
 
                 <p>
-                    Experience the difference with <Link href="/shop">Deep Pariwar Premium Sooji</Link>.
+                    <strong>Deep Pariwar</strong>, founded in 2001 under S.D Enterprises, represents this shift — growing from a family initiative into a respected regional supplier across Delhi NCR.
+                </p>
+
+                <h3>Supporting the Agricultural Ecosystem</h3>
+                <p>
+                    Choosing regional brands supports local farmers, suppliers, transport networks, and employment. Operating from Khurja, Deep Pariwar contributes responsibly to this ecosystem, ensuring that the agricultural value chain remains strong.
+                </p>
+
+                <h3>Tradition + Modern Expectations</h3>
+                <p>
+                    Today’s consumers want traditional taste combined with reliable packaging and consistency. Deep Pariwar’s wide range of products—including wheat flour, sooji, dalia, poha, maida, besan, and makki atta—reflects this delicate balance.
+                </p>
+
+                <h3>The Emotional Factor</h3>
+                <p>
+                    Food connects generations. Many households prefer brands that feel relatable rather than corporate. A kitchen staple isn&apos;t just a product; it&apos;s a part of the family’s daily ritual.
+                </p>
+
+                <p>
+                    As India’s food industry evolves, one truth remains clear: <strong>authenticity still matters</strong>. And sometimes the strongest brands are built quietly — through consistency, not commercials.
                 </p>
             </div>
         )

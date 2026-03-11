@@ -8,43 +8,33 @@ import Image from 'next/image';
 const blogPosts = [
     {
         id: 1,
-        title: "The Ultimate Guide to Choosing the Best Atta for Soft Rotis",
-        excerpt: "Discover the science behind milling and how the right wheat variety makes all the difference in your daily nutrition and roti texture.",
+        title: "From Khurja to NCR: The Journey of Deep Pariwar",
+        excerpt: "How three brothers from Khurja built Deep Pariwar into a trusted household name across Delhi NCR.",
         date: "March 10, 2024",
         author: "Pariwar Kitchen",
         category: "Nutrition",
-        img: "/product.webp",
+        img: "/group-product.png",
         relatedProduct: "Deep Pariwar Atta"
     },
     {
         id: 2,
-        title: "Why Pure Besan is a Must-Have in Your Healthy Diet",
-        excerpt: "From being gluten-free to rich in protein, learn why gram flour (besan) is considered a superfood in traditional Indian households.",
+        title: "The Secret Behind Soft Rotis: Why Quality Wheat Flour Matters",
+        excerpt: "Discover why flour quality plays a crucial role in soft, fluffy rotis and better digestion.",
         date: "March 08, 2024",
         author: "Chef Anita",
         category: "Health",
-        img: "/product.webp",
-        relatedProduct: "Pure Besan"
+        img: "/group-product.png",
+        relatedProduct: "Wheat Flour (Atta)"
     },
     {
         id: 3,
-        title: "Roasted Poha: A Nutritious and Easy Breakfast for Busy Mornings",
-        excerpt: "Poha is more than just a quick meal; it's a balanced source of carbohydrates and iron. Read our top techniques for the perfect roast.",
+        title: "Regional Brands Are Rising: Why Families Choose Trust Over Corporations",
+        excerpt: "Indian families are increasingly choosing trusted regional brands over large corporations.",
         date: "March 05, 2024",
         author: "Pariwar Kitchen",
         category: "Lifestyle",
-        img: "/product.webp",
-        relatedProduct: "Roasted Poha"
-    },
-    {
-        id: 4,
-        title: "The Versatility of Sooji: From Breakfast Upma to Festive Halwas",
-        excerpt: "Semolina is a kitchen staple. Learn how our premium, double-roasted sooji saves you time and enhances the flavor of your favorite dishes.",
-        date: "March 02, 2024",
-        author: "Chef Anita",
-        category: "Recipes",
-        img: "/product.webp",
-        relatedProduct: "Premium Sooji"
+        img: "/group-product.png",
+        relatedProduct: "Deep Pariwar"
     }
 ];
 

@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCards, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import Image from 'next/image';
 import { IoPlay, IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5';
 import { FaYoutube } from 'react-icons/fa';
 
@@ -93,33 +92,36 @@ const Reels = () => {
                         }}
                         pagination={{ clickable: true }}
                     >
-                        {reelsData.map((reel) => (
-                            <SwiperSlide key={reel.id} className="reels-slide">
-                                <div className="reels-card">
-                                    <div className="reels-card__img-wrap">
-                                        <Image
-                                            src={reel.thumbnail}
-                                            alt={reel.caption}
-                                            fill
-                                            sizes="400px"
-                                            className="reels-card__img"
-                                            style={{ objectFit: 'cover' }}
-                                        />
-                                        <div className="reels-card__overlay">
-                                            <button
-                                                className="reels-play-btn"
-                                                onClick={() => setActiveVideo(reel.videoUrl)}
-                                            >
-                                                <IoPlay size={30} />
-                                            </button>
+                        {reelsData.map((reel) => {
+                            const videoId = reel.videoUrl.split('/').pop();
+                            return (
+                                <SwiperSlide key={reel.id} className="reels-slide">
+                                    <div className="reels-card">
+                                        <div className="reels-card__img-wrap">
+                                            <iframe
+                                                src={`${reel.videoUrl}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3`}
+                                                title={reel.caption}
+                                                className="reels-card__video"
+                                                style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, border: 'none' }}
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            />
+                                            <div className="reels-card__overlay" style={{ background: 'transparent' }}>
+                                                <button
+                                                    className="reels-play-btn"
+                                                    onClick={() => setActiveVideo(reel.videoUrl)}
+                                                    style={{ opacity: 0.1 }}
+                                                >
+                                                    <IoPlay size={30} />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className="reels-card__content">
+                                            <p className="reels-card__caption">{reel.caption}</p>
                                         </div>
                                     </div>
-                                    <div className="reels-card__content">
-                                        <p className="reels-card__caption">{reel.caption}</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
+                                </SwiperSlide>
+                            );
+                        })}
                     </Swiper>
 
                     {/* Navigation Buttons */}
@@ -143,7 +145,7 @@ const Reels = () => {
                             <iframe
                                 width="100%"
                                 height="100%"
-                                src={`${activeVideo}?autoplay=1`}
+                                src={`${activeVideo}?autoplay=1&mute=0`}
                                 title="YouTube Shorts Video"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

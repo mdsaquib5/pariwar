@@ -224,7 +224,7 @@ section {
         grid-template-columns: 1fr !important;
         gap: 40px !important;
     }
-    
+
     .about-story__img-wrap {
         order: -1;
     }
@@ -1451,11 +1451,11 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
-    
+
     .offering-arch {
         display: none;
     }
-    
+
     .offering-grid-wrap {
         padding-top: 20px;
     }
