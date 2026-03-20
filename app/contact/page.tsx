@@ -82,7 +82,7 @@ export default function ContactPage() {
                                     <h3 className="contact-card__title">{card.title}</h3>
                                     <p className="contact-card__desc">{card.desc}</p>
                                     {card.cta && (
-                                        <Link href="mailto:pariwaratta@gmail.com" className="contact-card__cta">
+                                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLScEZqRppgK-SSamaOR0FHW1HLTxSyBJcroK8WQ-dY7jaqB4Qg/alreadyresponded" className="contact-card__cta">
                                             {card.cta}
                                         </Link>
                                     )}
